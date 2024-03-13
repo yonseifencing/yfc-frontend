@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbit&display=swap");
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  z-index: 999;
+
+  .inline_wide {
+    width: 1300px;
+    height: 100%;
+    padding: 0 5px 0 10px;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      .logo {
+        height: 62px;
+        margin-top: 5px;
+        margin-left: 10px;
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+
+      .menu {
+        display: flex;
+        align-items: center;
+
+        li {
+          a {
+            margin: 0 10px;
+            padding: 18px;
+            color: black;
+            font-size: 17px;
+            font-family: "Pretendard Variable", Pretendard, -apple-system,
+              BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
+              "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+              "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+              sans-serif;
+            font-weight: bold;
+          }
+
+          a:hover {
+            color: rgb(24, 50, 77);
+            border-bottom: 2px solid #000080;
+          }
+        }
+      }
+
+      .menubtn {
+        margin-top: 5px;
+        margin-left: 15px;
+        display: none;
+        font-size: 35px;
+      }
+
+      .menubtn:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .inline_small {
+    width: 100vw;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      .logo {
+        height: 42px;
+        margin-top: 5px;
+        margin-left: 10px;
+      }
+    }
+
+    .right-menubtn {
+      width: 50px;
+      height: 50px;
+      margin-top: 5px;
+      margin-left: 15px;
+      padding: 7px;
+      font-size: 35px;
+    }
+
+    .right-menubtn:hover {
+      cursor: pointer;
+    }
+  }
+}
