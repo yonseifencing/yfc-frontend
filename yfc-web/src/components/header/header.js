@@ -17,7 +17,7 @@ export default function Header() {
     <header>
       <div
         className="inline_wide"
-        style={{ display: size == "wide" ? "flex" : "none" }}
+        // style={{ display: size == "wide" ? "flex" : "none" }}
       >
         <a href="/" className="left">
           <img src={Logo} className="logo" alt="" />
@@ -41,7 +41,7 @@ export default function Header() {
       </div>
       <div
         className="inline_small"
-        style={{ display: size == "wide" ? "none" : "flex" }}
+        // style={{ display: size == "wide" ? "none" : "flex" }}
       >
         <a href="/" className="left">
           <img src={Logo} className="logo" alt="" />

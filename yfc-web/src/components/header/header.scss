@@ -9,6 +9,7 @@ a {
 }
 
 header {
+  width: 100vw;
   height: 90px;
   display: flex;
   justify-content: center;
@@ -82,7 +83,7 @@ header {
   .inline_small {
     width: 100vw;
     padding: 0 10px;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
 
@@ -109,6 +110,16 @@ header {
 
     .right-menubtn:hover {
       cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    .inline_wide {
+      display: none;
+    }
+
+    .inline_small {
+      display: flex;
     }
   }
 }

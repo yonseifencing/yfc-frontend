@@ -12,10 +12,7 @@ export default function HomePage() {
       <div className="main">
         <img src={MainPhoto1} alt="" />
 
-        <div className="black">
-          {/* <h3>YONSEI FENCING</h3>
-          <button>지원하러 가기</button> */}
-        </div>
+        <div className="black"></div>
       </div>
 
       <AboutPage />
