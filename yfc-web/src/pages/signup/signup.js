@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./signup.scss";
 
 export default function SignUpPage() {
+  const [id, setId] = useState("");
+  const [pw, setPw] = useState("");
+  const [pw_r, setPw_r] = useState("");
+  const [name, setName] = useState("");
+
   return (
     <div className="signup">
       <form action="">

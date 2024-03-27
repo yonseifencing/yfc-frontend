@@ -2,7 +2,7 @@ import React from "react";
 import "./home.scss";
 import MainPic from "../../components/mainpic/mainpic";
 import AboutPage from "../about/about";
-import ActivityPage from "../activity/activity";
+import ActPage from "../act/act";
 import RecruitPage from "../recruit/recruit";
 
 export default function HomePage() {
@@ -10,8 +10,8 @@ export default function HomePage() {
     <div className="home">
       <MainPic />
       <AboutPage />
-      <ActivityPage />
-      <RecruitPage />
+      <ActPage />
+      {/* <RecruitPage /> */}
     </div>
   );
 }

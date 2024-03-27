@@ -8,16 +8,16 @@ export default function AboutPage() {
 
   useEffect(() => {
     setTargetY(textRef.current.offsetTop);
-    console.log(targetY);
+    // console.log(targetY);
 
-    window.addEventListener("resize", () => {
-      setTargetY(textRef.current.offsetTop);
-      console.log("현재 높이는 " + targetY);
-    });
+    // window.addEventListener("resize", () => {
+    //   setTargetY(textRef.current.offsetTop);
+    //   console.log("현재 높이는 " + targetY);
+    // });
   });
 
   window.addEventListener("scroll", () => {
-    console.log(window.scrollY - targetY);
+    // console.log(window.scrollY - targetY);
     if (window.scrollY - targetY > -300) {
       setTextopacity(((window.scrollY - targetY + 300) / 100) * 0.25);
     } else {
@@ -28,6 +28,7 @@ export default function AboutPage() {
   return (
     <div className="about" ref={textRef}>
       <h2 style={{ opacity: textopacity }}>연세펜싱부를 소개합니다.</h2>
+      {/* <h4>연세펜싱부는 체육대학 소속 동아리로서 </h4> */}
     </div>
   );
 }
