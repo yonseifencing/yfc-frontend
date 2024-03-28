@@ -63,29 +63,29 @@ export default function ImgSlide() {
             className="dot1"
             style={{
               backgroundColor: currentdot == 1 ? "white" : "#ffffff66",
-              // width: currentdot == 1 ? "39px" : "14px",
             }}
+            onClick={() => setCurrentdot(1)}
           ></div>
           <div
             className="dot2"
             style={{
               backgroundColor: currentdot == 2 ? "white" : "#ffffff66",
-              // width: currentdot == 2 ? "39px" : "14px",
             }}
+            onClick={() => setCurrentdot(2)}
           ></div>
           <div
             className="dot3"
             style={{
               backgroundColor: currentdot == 3 ? "white" : "#ffffff66",
-              // width: currentdot == 3 ? "39px" : "14px",
             }}
+            onClick={() => setCurrentdot(3)}
           ></div>
           <div
             className="dot4"
             style={{
               backgroundColor: currentdot == 4 ? "white" : "#ffffff66",
-              // width: currentdot == 4 ? "39px" : "14px",
             }}
+            onClick={() => setCurrentdot(4)}
           ></div>
         </div>
         <MdArrowForwardIos
