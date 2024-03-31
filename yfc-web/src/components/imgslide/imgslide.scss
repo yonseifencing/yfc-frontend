@@ -13,19 +13,36 @@
     display: flex;
     align-items: center;
     transition: all 0.5s;
-    margin-left: calc(100vw - 200px);
+    margin-left: calc(100vw - 260px);
 
     div {
-      background-color: white;
+      background-color: green;
+      color: white;
       border-radius: 20px;
       text-align: center;
-      width: 340px;
-      height: 340px;
+      width: 480px;
+      height: 360px;
       margin: 0 20px;
       padding: 10px;
       transition: all 0.5s;
+
+      h3 {
+        font-size: 35px;
+      }
+    }
+
+    .img4 {
+      background-image: url("../../assets/images/act/fenbam.jpg");
+      background-size: cover;
     }
   }
+
+  // .center {
+  //   width: 480px;
+  //   height: 100px;
+  //   margin-left: calc(100vw - 240px);
+  //   background-color: orange;
+  // }
 
   .control {
     // margin: 30px 0;

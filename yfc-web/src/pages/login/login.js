@@ -11,7 +11,7 @@ export default function LoginPage() {
         <button>로그인</button>
         <div className="links">
           <a href="/signup">회원가입</a>
-          <a href="">아이디, 비밀번호 찾기</a>
+          <a href="">비밀번호 찾기</a>
         </div>
       </form>
     </div>

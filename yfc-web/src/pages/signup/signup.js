@@ -15,8 +15,7 @@ export default function SignUpPage() {
         <input type="password" placeholder="비밀번호" />
         <input type="password" placeholder="비밀번호 확인" />
 
-        <input type="text" placeholder="이름" />
-        <input type="text" placeholder="학번" />
+        <input type="text" placeholder="이름" className="nameinput" />
         <input type="text" placeholder="학과" />
         <input type="text" placeholder="입부년도" />
 
