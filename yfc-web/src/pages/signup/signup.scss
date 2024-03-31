@@ -1,9 +1,9 @@
 .signup {
   // border: 1px solid blue;
-  height: 700px;
+  height: 1100px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   font-family: "Pretendard Variable", Pretendard, -apple-system,
     BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
@@ -17,13 +17,48 @@
     text-align: center;
 
     h4 {
-      margin: 0 118px 60px 118px;
+      margin: 15px 118px 60px 118px;
       font-size: 40px;
       font-weight: 600;
     }
 
+    h3 {
+      padding: 6px 0 4px 2px;
+      text-align: start;
+      font-size: 17px;
+    }
+
+    h5 {
+      text-align: start;
+      font-weight: 400;
+      font-size: 14.5px;
+      padding: 0 0 3px 2px;
+      color: #808080;
+    }
+
+    .idbox {
+      display: flex;
+      align-items: center;
+
+      input {
+        width: 270px;
+        margin-top: 3px;
+        margin-bottom: 8px;
+        border-right: none;
+      }
+
+      button {
+        width: 120px;
+        margin-top: 3px;
+        margin-bottom: 8px;
+        font-size: 16.7px;
+        opacity: 1;
+      }
+    }
+
     input {
       height: 54px;
+      margin-top: 3px;
       margin-bottom: 8px;
       padding: 0 10px;
       font-size: 16.7px;
@@ -42,8 +77,13 @@
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     }
 
-    .nameinput {
-      margin-top: 40px;
+    .pwchecktext {
+      text-align: start;
+      padding: 0 0 3px 2px;
+    }
+
+    .nametxt {
+      margin-top: 30px;
     }
 
     button {
