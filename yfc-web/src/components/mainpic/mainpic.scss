@@ -9,9 +9,46 @@
   .main {
     display: flex;
     justify-content: center;
+
     img {
       width: 100vw;
       height: 46.8vw;
+    }
+
+    .txtbox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 30;
+      font-family: "Pretendard Variable", Pretendard, -apple-system,
+        BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+        "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+      h3 {
+        color: white;
+        font-size: 40px;
+      }
+
+      button {
+        width: 194px;
+        height: 64px;
+        border: none;
+        border-radius: 50px;
+        transition: all 0.3s;
+        font-size: 21px;
+        font-weight: 500;
+        font-family: "Pretendard Variable", Pretendard, -apple-system,
+          BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+          "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background-color: #fc4c02;
+        color: white;
+      }
     }
 
     .black {
@@ -19,7 +56,7 @@
       height: 46.8vw;
       position: absolute;
       top: 0;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.4);
     }
 
     .gradient {

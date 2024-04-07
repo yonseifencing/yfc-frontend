@@ -1,52 +1,84 @@
 .slide {
-  width: 200vw;
-  height: 440px;
+  // border: 1px solid red;
+  width: 100vw;
+  height: calc(24.48vw + 156px);
+  padding: 0 5.48vw;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
-  background-color: black;
   position: relative;
+
+  .leftarrow {
+    width: calc(13.28vw - 5.2vw);
+    height: calc(24.48vw + 156px);
+    background-color: white;
+    z-index: 50;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+  }
+
+  .rightarrow {
+    width: calc(13.28vw - 5.2vw);
+    height: calc(24.48vw + 156px);
+    z-index: 50;
+    background-color: white;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .arrow {
+    width: 5.2vw;
+    height: 5.2vw;
+    padding: 1.3vw;
+    margin-top: calc(12.24vw - 40.865px);
+  }
+
+  .arrow:hover {
+    cursor: pointer;
+  }
 
   .imgs {
     position: absolute;
-    top: 0;
+    top: 30px;
     display: flex;
+    // justify-content: space-between;
     align-items: center;
     transition: all 0.5s;
-    margin-left: calc(100vw - 260px);
+    // margin-left: calc(100vw - 260px);
+
+    // border: 1px solid green;
 
     div {
-      background-color: green;
-      color: white;
-      border-radius: 20px;
+      // border: 1px solid black;
+      // border-radius: 20px;
+      // width: 24.48vw;
+      height: calc(24.48vw + 56px);
+      width: auto;
+      // border: 1px solid orange;
+      margin: 0 2.6vw;
       text-align: center;
-      width: 480px;
-      height: 360px;
-      margin: 0 20px;
-      padding: 10px;
       transition: all 0.5s;
 
-      h3 {
-        font-size: 35px;
+      img {
+        width: 100%;
       }
-    }
 
-    .img4 {
-      background-image: url("../../assets/images/act/fenbam.jpg");
-      background-size: cover;
+      h3 {
+        margin-top: 10px;
+        font-size: 22px;
+        font-weight: 500;
+      }
     }
   }
 
-  // .center {
-  //   width: 480px;
-  //   height: 100px;
-  //   margin-left: calc(100vw - 240px);
-  //   background-color: orange;
-  // }
-
   .control {
-    // margin: 30px 0;
-    margin-top: 400px;
+    margin-top: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +91,8 @@
         height: 8px;
         margin: 0 8px;
         border-radius: 50px;
-        background-color: white;
+        background-color: orange;
+        color: red;
         transition: all 0.4s;
       }
 
@@ -70,7 +103,7 @@
     }
 
     .arrow {
-      color: white;
+      color: red;
       width: 33px;
       height: 33px;
       padding: 7px;

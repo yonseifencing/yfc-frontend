@@ -11,6 +11,7 @@ export default function RecruitDetailPage() {
   const [q5Open, setQ5Open] = useState(false);
   const [q6Open, setQ6Open] = useState(false);
 
+  console.log("리렌더링");
   return (
     <div className="recruit">
       <div className="now">

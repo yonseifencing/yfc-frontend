@@ -8,10 +8,10 @@ import RecruitPage from "../recruit/recruit";
 export default function HomePage() {
   return (
     <div className="home">
-      <MainPic />
-      <AboutPage />
-      <ActPage />
-      {/* <RecruitPage /> */}
+      {/* <MainPic /> */}
+      {/* <AboutPage /> */}
+      {/* <ActPage /> */}
+      <RecruitPage />
     </div>
   );
 }

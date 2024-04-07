@@ -13,7 +13,7 @@ export default function Header() {
         <div className="right">
           <ul className="menu">
             <li>
-              <a href="/about">소개</a>
+              <a href="/about">홈</a>
             </li>
             <li>
               <a href="/activity">활동</a>
