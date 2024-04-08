@@ -11,7 +11,7 @@ export default function HomePage() {
       {/* <MainPic /> */}
       {/* <AboutPage /> */}
       {/* <ActPage /> */}
-      <RecruitPage />
+      {/* <RecruitPage /> */}
     </div>
   );
 }

@@ -1,0 +1,104 @@
+// li {
+//   display: flex;
+//   width: 100vw;
+//   height: 82px;
+//   padding: 9px 40px;
+
+//   border-bottom: 1px solid #e1e8ef;
+
+//   font-size: 20px;
+//   font-weight: bold;
+//   transition: all 0.5s;
+
+//   .q-left {
+//     display: flex;
+//     align-items: center;
+//     font-size: 17px;
+//     margin-right: 13px;
+//   }
+
+//   .q-right {
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     height: 164px;
+
+//     .question {
+//       height: 63px;
+//       font-size: 20px;
+//       font-weight: 600;
+
+//       .downarrow {
+//         width: 27px;
+//         height: 27px;
+//         padding: 3px 2.5px 2px 2.5px;
+//         color: red;
+//         transition: all 3s;
+//         //   border: 1px solid red;
+//       }
+//       .downarrow:hover {
+//         cursor: pointer;
+//       }
+//     }
+//   }
+
+//   .question {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-bottom: 0px;
+//     // border: 1px solid red;
+//   }
+
+//   .answer {
+//     margin-top: 0px;
+//     font-weight: 500;
+//     line-height: 140%;
+//     opacity: 0;
+//     transition: all 0.3s;
+//   }
+// }
+
+// li {
+//   width: calc(100vw - 100px);
+//   //   height: 90px;
+//   padding: 9px 30px;
+//   margin: 0 50px;
+//   border-bottom: 1px solid #e1e8ef;
+//   //   border: 1px solid blue;
+
+//   .question {
+//     // border: 1px solid red;
+//     height: 70px;
+//     display: flex;
+//     align-items: center;
+
+//     .number {
+//       margin-right: 30px;
+//       font-size: 20px;
+//       font-weight: 600;
+//       //   border: 1px solid red;
+//     }
+
+//     div {
+//       width: 100%;
+//       font-size: 22px;
+//       font-weight: 500;
+//       display: flex;
+//       justify-content: space-between;
+
+//       .arrow:hover {
+//         cursor: pointer;
+//       }
+//     }
+//   }
+
+//   .answer {
+//     // border: 1px solid red;
+//     height: 20px;
+//     margin-left: 51.95px;
+//     display: flex;
+//     align-items: center;
+//     font-size: 22px;
+//   }
+// }
