@@ -5,18 +5,22 @@ import Logo from "../../assets/images/mainlogo.jpg";
 
 const menulist = [
   {
+    id: "menu1",
     title: "홈",
     link: "/",
   },
   {
+    id: "menu2",
     title: "활동",
     link: "/act",
   },
   {
+    id: "menu3",
     title: "모집",
     link: "/recruit",
   },
   {
+    id: "menu4",
     title: "로그인",
     link: "/login",
   },
@@ -31,7 +35,7 @@ export default function Header() {
         </a>
         <ul className="menu">
           {menulist.map((item) => (
-            <li>
+            <li key={item.id}>
               <a href={item.link}>{item.title}</a>
             </li>
           ))}
