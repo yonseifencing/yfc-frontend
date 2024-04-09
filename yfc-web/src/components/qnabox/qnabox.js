@@ -1,19 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "./qnabox.scss";
 import { SlArrowDown } from "react-icons/sl";
 
-export default function QNAbox() {
+export default function QNAbox({ num, question, answer, openheight }) {
+  const [open, setOpen] = useState(false);
+
   return (
-    <li>
+    <li
+      className="qnabox"
+      style={{ height: open ? `${openheight}px` : "102px" }}
+    >
       <div className="question">
-        <p className="number">01</p>
+        <p className="number">0{num}</p>
         <div>
-          <span>무슨 종목을 다루나요?</span>
-          <SlArrowDown className="arrow" />
+          <span>{question}</span>
+          <SlArrowDown
+            className="arrow"
+            style={{ transform: open ? "rotate(180deg)" : "rotate(0)" }}
+            onClick={() => {
+              if (open) {
+                setOpen(false);
+              } else {
+                setOpen(true);
+              }
+              console.log(open);
+            }}
+          />
         </div>
       </div>
-      <div className="answer">
-        <span>플러레랑 에페를 다룹니다.</span>
+      <div className="answer" style={{ opacity: open ? 1 : 0 }}>
+        {/* <span>{answer}</span> */}
+        {answer}
       </div>
     </li>
   );

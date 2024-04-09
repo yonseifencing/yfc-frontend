@@ -3,7 +3,7 @@ import "./home.scss";
 import MainPic from "../../components/mainpic/mainpic";
 import AboutPage from "../about/about";
 import ActPage from "../act/act";
-import RecruitPage from "../recruit/recruit";
+import RecruitPage from "../recruit/main/recruit_main";
 
 export default function HomePage() {
   return (
@@ -11,7 +11,7 @@ export default function HomePage() {
       {/* <MainPic /> */}
       {/* <AboutPage /> */}
       {/* <ActPage /> */}
-      {/* <RecruitPage /> */}
+      <RecruitPage />
     </div>
   );
 }
