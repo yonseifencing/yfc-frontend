@@ -19,7 +19,7 @@ const faqlist = [
         (전문 플러레 코치님과의 훈련, 선배님들과의 1:1 강습 가능)
       </span>
     ),
-    aline: 1,
+    aline: 2,
   },
   {
     num: 3,
