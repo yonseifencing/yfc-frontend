@@ -12,6 +12,9 @@ export default function HomePage() {
       {/* <AboutPage /> */}
       {/* <ActPage /> */}
       <RecruitPage />
+      {/* <span className="btnwrapper">
+        <button className="gorecruitbtn">지원하기</button>
+      </span> */}
     </div>
   );
 }

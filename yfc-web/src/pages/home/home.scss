@@ -1,7 +1,36 @@
 .home {
   width: 100vw;
+  // height: 2000px;
   display: flex;
   flex-direction: column;
-  position: relative;
-  overflow-x: hidden;
+  // position: relative;
+  // overflow-x: hidden;
+
+  .btnwrapper {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: end;
+    z-index: -100;
+  }
+  // .gorecruitbtn {
+  //   width: 180px;
+  //   height: 72px;
+  //   margin: 30px;
+  //   background-color: red;
+  //   z-index: 900;
+  //   color: white;
+  //   font-size: 20px;
+  //   font-weight: 600;
+  //   border: none;
+  //   border-radius: 36px;
+  //   font-family: "Pretendard Variable", Pretendard, -apple-system,
+  //     BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+  //     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+  //     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  // }
+
+  // button:hover {
+  //   cursor: pointer;
+  // }
 }

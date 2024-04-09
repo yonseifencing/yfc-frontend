@@ -1,11 +1,12 @@
 .home-recruit {
-  height: 1300px;
   font-family: "Pretendard Variable", Pretendard, -apple-system,
     BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 
   .faq {
+    // border: 1px solid blue;
+    height: 1300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,6 +21,78 @@
     ul {
       width: 1200px;
       border-top: 1px solid #e1e8ef;
+    }
+  }
+
+  .go-recruit {
+    height: 650px;
+    background-color: rgb(232, 232, 232);
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 1920px;
+      height: 650px;
+    }
+
+    .gray {
+      width: 100%;
+      height: 650px;
+      position: absolute;
+      top: 0;
+      background: rgba(1, 1, 1, 0.45);
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+
+      .txt {
+        margin-left: calc(-320px + 30vw);
+        width: 600px;
+        height: 350px;
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+          color: white;
+          font-size: 44px;
+          margin: 35px 0;
+        }
+
+        a {
+          width: 180px;
+          height: 52px;
+          margin-right: 11px;
+          // background-color: red;
+          color: white;
+          font-size: 20px;
+          font-weight: 600;
+          border: 1px solid white;
+          background: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 17px;
+          font-family: "Pretendard Variable", Pretendard, -apple-system,
+            BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+            "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        }
+
+        a:hover {
+          cursor: pointer;
+          background-color: rgba(1, 1, 1, 0.6);
+        }
+      }
+
+      @media screen and (max-width: 1050px) {
+        .txt {
+          margin-left: 0;
+        }
+      }
     }
   }
 }
