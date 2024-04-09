@@ -7,7 +7,7 @@ const faqlist = [
     num: 1,
     question: "무슨 종목을 다루나요?",
     answer: <span>플러레와 에페를 다루고 있으나 주종목은 플러레입니다.</span>,
-    openheight: 158,
+    aline: 1,
   },
   {
     num: 2,
@@ -19,7 +19,7 @@ const faqlist = [
         (전문 플러레 코치님과의 훈련, 선배님들과의 1:1 강습 가능)
       </span>
     ),
-    openheight: 181,
+    aline: 1,
   },
   {
     num: 3,
@@ -30,13 +30,13 @@ const faqlist = [
         있습니다.
       </span>
     ),
-    openheight: 158,
+    aline: 1,
   },
   {
     num: 4,
     question: "월수금토 정규 훈련은 모두 필참인가요?",
     answer: <span>주 1회 이상 필참입니다!</span>,
-    openheight: 158,
+    aline: 1,
   },
   {
     num: 5,
@@ -48,7 +48,7 @@ const faqlist = [
         또한 Y-CUP의 경우 전원 필수 참여로, 선수 혹은 스텝으로 참여해야 합니다.
       </span>
     ),
-    openheight: 181,
+    aline: 2,
   },
   {
     num: 6,
@@ -59,7 +59,7 @@ const faqlist = [
         신입 훈련 기간에도 공용 장비를 이용하여 훈련을 진행합니다.
       </span>
     ),
-    openheight: 181,
+    aline: 2,
   },
 ];
 
@@ -75,7 +75,7 @@ export default function RecruitPage() {
               num={item.num}
               question={item.question}
               answer={item.answer}
-              openheight={item.openheight}
+              openheight={item.aline == 2 ? 181 : 158}
             />
           ))}
         </ul>
