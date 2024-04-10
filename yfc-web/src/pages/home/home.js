@@ -8,13 +8,10 @@ import RecruitHomePage from "./partpages/recruit/recruit_home";
 export default function HomePage() {
   return (
     <div className="home">
-      {/* <MainPic /> */}
+      <MainPic />
       {/* <AboutPage /> */}
       {/* <ActPage /> */}
       <RecruitHomePage />
-      {/* <span className="btnwrapper">
-        <button className="gorecruitbtn">지원하기</button>
-      </span> */}
     </div>
   );
 }

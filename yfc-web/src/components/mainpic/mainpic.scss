@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+
 .mainpic {
   width: 100vw;
   height: 50vw;
@@ -15,48 +17,29 @@
       height: 46.8vw;
     }
 
-    .txtbox {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 30;
-      font-family: "Pretendard Variable", Pretendard, -apple-system,
-        BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-        "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-
-      h3 {
-        color: white;
-        font-size: 40px;
-      }
-
-      button {
-        width: 194px;
-        height: 64px;
-        border: none;
-        border-radius: 50px;
-        transition: all 0.3s;
-        font-size: 21px;
-        font-weight: 500;
-        font-family: "Pretendard Variable", Pretendard, -apple-system,
-          BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-          "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
-          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-      }
-
-      button:hover {
-        cursor: pointer;
-        background-color: #fc4c02;
-        color: white;
-      }
-    }
-
     .black {
       width: 100vw;
       height: 46.8vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       top: 0;
       background-color: rgba(0, 0, 0, 0.4);
+
+      .txtbox {
+        width: 707px;
+        padding-top: 580px;
+        z-index: 30;
+        font-family: "Josefin Slab", serif;
+        font-weight: 300;
+
+        p {
+          color: white;
+          font-size: 75px;
+          text-shadow: 0 0 5px black;
+        }
+      }
     }
 
     .gradient {

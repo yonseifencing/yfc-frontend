@@ -29,7 +29,6 @@ export default function QNAbox({ num, question, answer, openheight }) {
         </div>
       </div>
       <div className="answer" style={{ opacity: open ? 1 : 0 }}>
-        {/* <span>{answer}</span> */}
         {answer}
       </div>
     </li>
