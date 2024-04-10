@@ -20,11 +20,13 @@ export default function ImgSlide() {
 
   let widthsize = window.innerWidth;
 
-  // window.addEventListener("resize", () => {
-  //   widthsize = window.innerWidth;
-  //   imgsRef.current.style.transform =
-  //     "translateX(" + widthsize * 0.2968 * (1 - currentdot) + "px)";
-  // });
+  window.addEventListener("resize", () => {
+    widthsize = window.innerWidth;
+    if (imgsRef.current != null) {
+      imgsRef.current.style.transform =
+        "translateX(" + widthsize * 0.2795 * (1 - currentdot) + "px)";
+    }
+  });
 
   return (
     <div className="slide">
@@ -55,7 +57,7 @@ export default function ImgSlide() {
         ref={imgsRef}
         style={{
           transform:
-            "translateX(" + widthsize * 0.2968 * (1 - currentdot) + "px)",
+            "translateX(" + widthsize * 0.2795 * (1 - currentdot) + "px)",
         }}
       >
         <Img imgindex="img1" title="정규훈련" img={ExchangeImg} />

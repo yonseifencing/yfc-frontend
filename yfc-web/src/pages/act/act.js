@@ -7,8 +7,10 @@ export default function ActPage() {
   const navigate = useNavigate();
   return (
     <div className="act">
+      <h5>ACTIVITY</h5>
+      <h3 className="title">활동</h3>
       <ImgSlide />
-      <button onClick={() => navigate("/activity")}>활동 더보기</button>
+      <a href="/act">더보기</a>
     </div>
   );
 }

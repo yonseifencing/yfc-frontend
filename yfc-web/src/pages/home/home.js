@@ -10,7 +10,7 @@ export default function HomePage() {
     <div className="home">
       <MainPic />
       {/* <AboutPage /> */}
-      {/* <ActPage /> */}
+      <ActPage />
       <RecruitHomePage />
     </div>
   );

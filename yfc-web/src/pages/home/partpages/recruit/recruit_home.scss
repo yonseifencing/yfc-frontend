@@ -10,9 +10,18 @@
     flex-direction: column;
     align-items: center;
 
+    h5 {
+      width: 1200px;
+      padding-left: 30px;
+      margin-top: 70px;
+      font-size: 19px;
+    }
+
     h3 {
-      margin: 70px 0;
-      text-align: center;
+      width: 1200px;
+      margin: 5px 0 40px 0;
+      padding-left: 30px;
+      // text-align: center;
       font-size: 55px;
     }
 

@@ -1,33 +1,35 @@
 .slide {
   // border: 1px solid red;
-  width: 100vw;
-  height: calc(24.48vw + 156px);
-  padding: 0 5.48vw;
+  width: 200vw;
+  height: calc(27.95vw + 101px);
+  padding: 0 100vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: relative;
 
   .leftarrow {
-    width: calc(13.28vw - 5.2vw);
-    height: calc(24.48vw + 156px);
+    width: 8.08vw;
+    height: calc(27.95vw + 100px);
     background-color: white;
     z-index: 50;
     position: absolute;
     top: 30px;
-    left: 0;
+    left: 50vw;
     // border: 1px solid red;
     display: flex;
     justify-content: center;
   }
 
   .rightarrow {
-    width: calc(13.28vw - 5.2vw);
-    height: calc(24.48vw + 156px);
+    // border: 1px solid red;
+    width: 8.08vw;
+    height: calc(27.95vw + 100px);
     z-index: 50;
     background-color: white;
     position: absolute;
     top: 30px;
-    right: 0;
+    left: calc(150vw - 8.08vw);
     display: flex;
     justify-content: center;
   }
@@ -36,7 +38,7 @@
     width: 5.2vw;
     height: 5.2vw;
     padding: 1.3vw;
-    margin-top: calc(12.24vw - 40.865px);
+    margin-top: calc(13.975vw - 40.865px);
   }
 
   .arrow:hover {
@@ -46,31 +48,32 @@
   .imgs {
     position: absolute;
     top: 30px;
+    left: 58.08vw;
     display: flex;
+
     // justify-content: space-between;
     align-items: center;
     transition: all 0.5s;
-    // margin-left: calc(100vw - 260px);
 
     // border: 1px solid green;
 
     div {
       // border: 1px solid black;
       // border-radius: 20px;
-      // width: 24.48vw;
-      height: calc(24.48vw + 56px);
-      width: auto;
+      width: 27.95vw;
+      height: calc(27.95vw + 56px);
       // border: 1px solid orange;
-      margin: 0 2.6vw;
+
       text-align: center;
       transition: all 0.5s;
 
       img {
         width: 100%;
+        padding: 1vw;
       }
 
       h3 {
-        margin-top: 10px;
+        margin-top: 0;
         font-size: 22px;
         font-weight: 500;
       }

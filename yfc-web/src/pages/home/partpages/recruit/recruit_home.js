@@ -68,6 +68,7 @@ export default function RecruitHomePage() {
   return (
     <div className="home-recruit">
       <div className="faq">
+        <h5>FAQ</h5>
         <h3>자주 묻는 질문</h3>
         <ul>
           {faqlist.map((item) => (
