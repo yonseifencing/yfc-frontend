@@ -5,7 +5,7 @@ import Footer from "./components/footer/footer";
 import HomePage from "./pages/home/home";
 import AboutDetailPage from "./pages/about/about_detail";
 import ActDetailPage from "./pages/act/act_detail";
-import RecruitDetailPage from "./pages/recruit/detail/recruit._detail";
+import RecruitDetailPage from "./pages/recruit/recruit.js";
 import LoginPage from "./pages/login/login";
 import SignUpPage from "./pages/signup/signup";
 

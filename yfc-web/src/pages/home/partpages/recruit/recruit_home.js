@@ -1,7 +1,7 @@
 import React from "react";
-import "./recruit_main.scss";
-import QNAbox from "../../../components/qnabox/qnabox";
-import FencingclubImg from "../../../assets/images/home/fencingclubImg.png";
+import "./recruit_home.scss";
+import QNAbox from "../../../../components/qnabox/qnabox";
+import FencingclubImg from "../../../../assets/images/home/fencingclubImg.png";
 
 const faqlist = [
   {
@@ -64,7 +64,7 @@ const faqlist = [
   },
 ];
 
-export default function RecruitPage() {
+export default function RecruitHomePage() {
   return (
     <div className="home-recruit">
       <div className="faq">

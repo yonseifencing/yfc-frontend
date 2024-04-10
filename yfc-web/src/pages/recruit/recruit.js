@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./recruit_detail.scss";
+import "./recruit.scss";
 import { SlArrowDown } from "react-icons/sl";
-import nowImage from "../../../assets/images/recruitImage.jpg";
+import nowImage from "../../assets/images/recruitImage.jpg";
 
 export default function RecruitDetailPage() {
   return (
