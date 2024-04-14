@@ -24,7 +24,7 @@ export default function ImgSlide() {
     widthsize = window.innerWidth;
     if (imgsRef.current != null) {
       imgsRef.current.style.transform =
-        "translateX(" + widthsize * 0.2795 * (1 - currentdot) + "px)";
+        "translateX(" + 410 * (2 - currentdot) + "px)";
     }
   });
 
@@ -56,11 +56,12 @@ export default function ImgSlide() {
         className="imgs"
         ref={imgsRef}
         style={{
-          transform:
-            "translateX(" + widthsize * 0.2795 * (1 - currentdot) + "px)",
+          // transform:
+          // "translateX(" + widthsize * 0.2795 * (10 - currentdot) + "px)",
+          transform: "translateX(" + 410 * (2 - currentdot) + "px)",
         }}
       >
-        <Img imgindex="img1" title="정규훈련" img={ExchangeImg} />
+        <Img imgindex="img1" title="정규 훈련" img={ExchangeImg} />
         <Img imgindex="img2" title="교류전" img={ExchangeImg} />
         <Img imgindex="img3" title="대회" img={ExchangeImg} />
         <Img imgindex="img4" title="펜싱인의 밤" img={FenBamImg} />

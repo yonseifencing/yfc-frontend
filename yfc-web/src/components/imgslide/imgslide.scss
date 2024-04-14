@@ -1,21 +1,24 @@
 .slide {
   // border: 1px solid red;
-  width: 200vw;
-  height: calc(27.95vw + 101px);
-  padding: 0 100vw;
+  width: 1400px;
+  // height: calc(27.95vw + 101px);
+  height: 530px;
+  // margin: 0 100px;
+  // padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
   position: relative;
 
   .leftarrow {
-    width: 8.08vw;
-    height: calc(27.95vw + 100px);
+    width: 100px;
+    height: 500px;
     background-color: white;
     z-index: 50;
     position: absolute;
-    top: 30px;
-    left: 50vw;
+    top: 45px;
+    left: 0;
     // border: 1px solid red;
     display: flex;
     justify-content: center;
@@ -23,22 +26,22 @@
 
   .rightarrow {
     // border: 1px solid red;
-    width: 8.08vw;
-    height: calc(27.95vw + 100px);
+    width: 100px;
+    height: 500px;
     z-index: 50;
     background-color: white;
     position: absolute;
-    top: 30px;
-    left: calc(150vw - 8.08vw);
+    top: 45px;
+    left: 1300px;
     display: flex;
     justify-content: center;
   }
 
   .arrow {
-    width: 5.2vw;
-    height: 5.2vw;
+    width: 100px;
+    height: 100px;
     padding: 1.3vw;
-    margin-top: calc(13.975vw - 40.865px);
+    margin-top: 140px;
   }
 
   .arrow:hover {
@@ -48,20 +51,23 @@
   .imgs {
     position: absolute;
     top: 30px;
-    left: 58.08vw;
+    // left: 410px;
+    // transform: translateX(810px);
+    // overflow-x: hidden;
     display: flex;
 
     // justify-content: space-between;
     align-items: center;
     transition: all 0.5s;
+    transform: translateX(410px);
 
     // border: 1px solid green;
 
     div {
       // border: 1px solid black;
       // border-radius: 20px;
-      width: 27.95vw;
-      height: calc(27.95vw + 56px);
+      width: 410px;
+      height: 498px;
       // border: 1px solid orange;
 
       text-align: center;
@@ -69,7 +75,7 @@
 
       img {
         width: 100%;
-        padding: 5vw;
+        padding: 15px;
       }
 
       h3 {
