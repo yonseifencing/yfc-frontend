@@ -15,6 +15,12 @@ export default function LoginPage() {
     console.log("pw: " + pw);
   };
 
+  const handleClickButton = (e) => {
+    if ((id == "") | (pw == "")) {
+      e.preventDefault();
+    }
+  };
+
   const onSubmit = (e) => {
     // e.preventDefault();
     fetch(
@@ -36,7 +42,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="container">
+    <div className="login">
       <form action="">
         <h4>로그인</h4>
         <input type="text" placeholder="아이디" onChange={handleInputId} />
@@ -45,7 +51,14 @@ export default function LoginPage() {
           placeholder="비밀번호"
           onChange={handleInputPw}
         />
-        <button>로그인</button>
+        <button
+          style={{
+            opacity: id.length != "" && pw.length != "" ? "0.8" : "0.5",
+          }}
+          onClick={handleClickButton}
+        >
+          로그인
+        </button>
         <div className="links">
           <a href="/signup">회원가입</a>
           <a href="">비밀번호 찾기</a>

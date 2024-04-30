@@ -2,6 +2,7 @@
 
 .mainpic {
   width: 100vw;
+  // min-width: 900px;
   height: 46vw;
   // height: calc(100vh - 90px);
   overflow: hidden;
@@ -31,9 +32,11 @@
       .txtbox {
         width: 707px;
         padding-top: 580px;
+        text-align: center;
         z-index: 30;
         font-family: "Josefin Slab", serif;
         font-weight: 300;
+        white-space: nowrap;
 
         p {
           color: white;
@@ -74,6 +77,20 @@
       .gradient {
         height: 240px;
         bottom: -92.8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mainpic {
+    .main {
+      .black {
+        .txtbox {
+          p {
+            font-size: 48px;
+          }
+        }
       }
     }
   }

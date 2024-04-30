@@ -1,6 +1,7 @@
 .slide {
   // border: 1px solid red;
   width: 1400px;
+  // min-width: 2400px;
   // height: calc(27.95vw + 101px);
   height: 530px;
   // margin: 0 100px;
@@ -17,7 +18,7 @@
     background-color: white;
     z-index: 50;
     position: absolute;
-    top: 45px;
+    margin-top: 45px;
     left: 0;
     // border: 1px solid red;
     display: flex;
@@ -31,7 +32,7 @@
     z-index: 50;
     background-color: white;
     position: absolute;
-    top: 45px;
+    margin-top: 45px;
     left: 1300px;
     display: flex;
     justify-content: center;
