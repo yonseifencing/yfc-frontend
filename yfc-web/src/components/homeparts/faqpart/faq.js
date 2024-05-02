@@ -1,7 +1,6 @@
 import React from "react";
-import "./recruit_home.scss";
-import QNAbox from "../../../../components/qnabox/qnabox";
-import FencingclubImg from "../../../../assets/images/home/fencingclubImg.png";
+import "./faq.scss";
+import QNAbox from "../../qnabox/qnabox";
 
 const faqlist = [
   {
@@ -64,7 +63,7 @@ const faqlist = [
   },
 ];
 
-export default function RecruitHomePage() {
+export default function FAQPage() {
   return (
     <div className="home-recruit">
       <div className="faq">
@@ -81,17 +80,6 @@ export default function RecruitHomePage() {
             />
           ))}
         </ul>
-      </div>
-      <div className="go-recruit">
-        <img src={FencingclubImg} alt="" />
-        <div className="gray">
-          <div className="txt">
-            <h3>연세펜싱부와 함께 하세요!</h3>
-            <a href="/recruit">
-              <p>지원하기</p>
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   );

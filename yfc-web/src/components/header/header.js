@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./header.scss";
 import { IoMenu } from "react-icons/io5";
-import Logo from "../../assets/images/mainlogo.jpg";
+import MainLogo from "../../assets/images/mainlogo.jpg";
 
 const menulist = [
   {
@@ -33,7 +33,7 @@ export default function Header() {
     <header>
       <div className="inline_wide">
         <a href="/" className="logo">
-          <img src={Logo} alt="" />
+          <img src={MainLogo} alt="" />
         </a>
         <ul className="menu">
           {menulist.map((item) => (
@@ -46,7 +46,7 @@ export default function Header() {
       <div className="inline_small">
         <div className="top">
           <a href="/" className="logo">
-            <img src={Logo} alt="" />
+            <img src={MainLogo} alt="" />
           </a>
           <IoMenu
             className="menubtn"
@@ -59,11 +59,12 @@ export default function Header() {
             }}
           />
         </div>
-        {/* <div
+        <div className="coverwhite"></div>
+        <div
           className="downmenu"
           style={{
             opacity: menuOpen ? "1" : "1",
-            top: menuOpen ? "90px" : "-242px",
+            top: menuOpen ? "90px" : "-245px",
           }}
         >
           <ul>
@@ -80,7 +81,7 @@ export default function Header() {
               <a href="/login">로그인</a>
             </li>
           </ul>
-        </div> */}
+        </div>
       </div>
     </header>
   );

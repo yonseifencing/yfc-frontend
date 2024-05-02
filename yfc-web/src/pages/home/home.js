@@ -1,9 +1,9 @@
 import React from "react";
 import "./home.scss";
-import MainPic from "../../components/mainpic/mainpic";
+import MainPic from "../../components/homeparts/mainpic/mainpic.js";
 import AboutPage from "../about/about";
 import ActPage from "../act/act";
-import RecruitHomePage from "./partpages/recruit/recruit_home";
+import FAQPage from "../../components/homeparts/faqpart/faq.js";
 
 export default function HomePage() {
   return (
@@ -11,7 +11,8 @@ export default function HomePage() {
       <MainPic />
       {/* <AboutPage /> */}
       {/* <ActPage /> */}
-      {/* <RecruitHomePage /> */}
+
+      <FAQPage />
     </div>
   );
 }

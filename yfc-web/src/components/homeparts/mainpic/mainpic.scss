@@ -2,10 +2,9 @@
 
 .mainpic {
   width: 100vw;
-  // min-width: 900px;
-  height: 46vw;
-  // height: calc(100vh - 90px);
-  overflow: hidden;
+  height: 46.8vw;
+  // border: 1px solid red;
+  // overflow: hidden;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -122,76 +121,40 @@
         }
       }
 
-      @media all and (min-width: 480px) and (max-width: 768px) {
+      // @media all and (min-width: 480px) and (max-width: 768px) {
+      //   .txt {
+      //     // border: 1px solid red;
+      //     width: 60vw;
+      //     height: 41.5vw;
+
+      //     h3 {
+      //       margin: 12% 0 9% 0;
+      //       font-size: 4.7vw;
+      //     }
+
+      //     a {
+      //       width: 50%;
+      //       height: 23%;
+      //       font-size: 3.8vw;
+      //     }
+      //   }
+      // }
+
+      @media all and (max-width: 768px) {
         .txt {
           // border: 1px solid red;
           width: 60vw;
           height: 41.5vw;
 
           h3 {
-            margin: 9% 0;
-            font-size: 4.5vw;
+            margin: 12% 0 9% 0;
+            font-size: 4.7vw;
           }
 
           a {
             width: 50%;
             height: 23%;
             font-size: 3.8vw;
-          }
-        }
-      }
-
-      @media all and (max-width: 479px) {
-        .txt {
-          border: 1px solid red;
-          width: 60vw;
-          height: 41.5vw;
-
-          h3 {
-            margin: 9% 0;
-            font-size: 4.5vw;
-          }
-
-          a {
-            width: 50%;
-            height: 23%;
-            font-size: 3.8vw;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .mainpic {
-    height: 800px;
-
-    .main {
-      img {
-        width: 1600px;
-        height: 750px;
-      }
-
-      .black {
-        height: 750px;
-      }
-
-      .gradient {
-        height: 240px;
-        bottom: -92.8px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .mainpic {
-    .main {
-      .black {
-        .txtbox {
-          p {
-            font-size: 48px;
           }
         }
       }
@@ -201,6 +164,8 @@
 
 @media all and (max-width: 768px) {
   .mainpic {
+    height: 69.31vw;
+
     .main_wide {
       display: none;
     }

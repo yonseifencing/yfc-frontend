@@ -11,7 +11,7 @@ a {
 }
 
 header {
-  width: calc(100vw);
+  width: 100vw;
   display: flex;
   justify-content: center;
   position: sticky;
@@ -69,11 +69,9 @@ header {
     height: 90px;
     padding: 0 10px;
     display: none;
-    z-index: 999;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    // align-items: center;
     position: relative;
 
     .top {
@@ -84,7 +82,6 @@ header {
       align-items: center;
       height: 90px;
       background-color: white;
-      // border-bottom: 1px solid red;
 
       .logo {
         height: 100%;
@@ -111,16 +108,22 @@ header {
       }
     }
 
+    .coverwhite {
+      width: 100%;
+      height: 480px;
+      background-color: white;
+      position: absolute;
+      top: -395px;
+      z-index: 9;
+    }
+
     .downmenu {
-      width: 100vw;
-      // display: none;
+      width: 100%;
       height: 240px;
       padding: 0;
       background-color: white;
       transition: all 0.5s;
       position: absolute;
-      // top: 90px;
-      // border: 1px solid red;
 
       ul {
         display: flex;
@@ -130,7 +133,6 @@ header {
 
         li {
           height: 60px;
-          margin: 0 5px;
           border-bottom: 1px solid lightgray;
           font-size: 19px;
           font-family: "Pretendard Variable", Pretendard, -apple-system,
@@ -140,7 +142,6 @@ header {
           a {
             width: 100%;
             color: black;
-            // background-color: red;
             height: 100%;
             display: flex;
             justify-content: center;
@@ -150,14 +151,64 @@ header {
       }
     }
   }
+}
 
-  @media screen and (max-width: 769px) {
+@media screen and (max-width: 769px) {
+  header {
     .inline_wide {
       display: none;
     }
 
     .inline_small {
       display: flex;
+
+      .downmenu {
+        height: 241px;
+        ul {
+          li {
+            height: 60px;
+            a {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media screen and (min-width: 480px) and (max-width: 769px) {
+//   header {
+//     .inline_small {
+//       .downmenu {
+//         height: 241px;
+//         ul {
+//           li {
+//             height: 60px;
+//             a {
+//               font-size: 18px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+@media screen and (max-width: 479px) {
+  header {
+    .inline_small {
+      .downmenu {
+        height: 222px;
+        ul {
+          li {
+            height: 55px;
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+      }
     }
   }
 }

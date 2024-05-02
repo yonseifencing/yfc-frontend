@@ -1,8 +1,8 @@
 import React from "react";
 import "./mainpic.scss";
-import MainPhoto from "../../assets/images/mainphoto2.png";
-import MainPhoto1 from "../../assets/images/mainpic.png";
-import ClubImg from "../../assets/images/home/fencingclubImg479.png";
+
+import MainPhoto1 from "../../../assets/images/mainpic.png";
+import ClubImg from "../../../assets/images/home/fencingclubImg479.png";
 
 export default function MainPic() {
   window.addEventListener("resize", () => {
