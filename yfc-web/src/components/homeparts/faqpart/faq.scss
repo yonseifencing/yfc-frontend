@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid blue;
+    // border: 1px solid blue;
     padding: 0 50px;
 
     h5 {
@@ -109,29 +109,30 @@
   // }
 }
 
-@media all and (min-width: 480px) and (max-width: 768px) {
+@media all and (max-width: 768px) {
   .home-recruit {
+    // background-color: red;
     width: 100vw;
-    height: 900px;
-    // margin: 20px;
+    height: 930px;
 
     .faq {
       width: 100%;
-      padding: 20px;
+      padding: 10px 9px;
       height: 900px;
 
       h5 {
-        width: 100vw;
-        font-size: 3.1vw;
-        margin-left: 9vw;
-        margin-top: 7vw;
+        width: 100%;
+        font-size: 21px;
+        // margin-left: 9vw;
+        margin-top: 40px;
         // margin: 0;
       }
 
       h3 {
-        width: 100vw;
-        font-size: 5.1vw;
-        margin-left: 9vw;
+        width: 100%;
+        font-size: 33px;
+        margin-bottom: 30px;
+        // margin-left: 9vw;
       }
 
       ul {
@@ -143,5 +144,32 @@
 
 @media all and (max-width: 479px) {
   .home-recruit {
+    width: 100vw;
+    height: 930px;
+
+    .faq {
+      width: 100%;
+      padding: 10px 9px;
+      height: 900px;
+
+      h5 {
+        width: 100%;
+        font-size: 16px;
+        // margin-left: 9vw;
+        margin-top: 40px;
+        // margin: 0;
+      }
+
+      h3 {
+        width: 100%;
+        font-size: 28px;
+        margin-bottom: 30px;
+        // margin-left: 9vw;
+      }
+
+      ul {
+        width: 100%;
+      }
+    }
   }
 }

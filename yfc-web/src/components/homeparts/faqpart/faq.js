@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./faq.scss";
 import QNAbox from "../../qnabox/qnabox";
 
@@ -8,6 +8,7 @@ const faqlist = [
     question: "무슨 종목을 다루나요?",
     answer: <span>플러레와 에페를 다루고 있으나 주종목은 플러레입니다.</span>,
     aline: 1,
+    smallheight: 110,
   },
   {
     num: 2,
@@ -20,6 +21,7 @@ const faqlist = [
       </span>
     ),
     aline: 2,
+    smallheight: 150,
   },
   {
     num: 3,
@@ -31,12 +33,14 @@ const faqlist = [
       </span>
     ),
     aline: 1,
+    smallheight: 110,
   },
   {
     num: 4,
     question: "월수금토 정규 훈련은 모두 필참인가요?",
     answer: <span>주 1회 이상 필참입니다!</span>,
     aline: 1,
+    smallheight: 90,
   },
   {
     num: 5,
@@ -49,6 +53,7 @@ const faqlist = [
       </span>
     ),
     aline: 2,
+    smallheight: 150,
   },
   {
     num: 6,
@@ -60,10 +65,20 @@ const faqlist = [
       </span>
     ),
     aline: 2,
+    smallheight: 150,
   },
 ];
 
 export default function FAQPage() {
+  const [size, setSize] = useState("");
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth <= 479) {
+      setSize("vs");
+    } else if (window.innerWidth > 768) {
+      setSize("m");
+    }
+  });
   return (
     <div className="home-recruit">
       <div className="faq">
@@ -77,6 +92,7 @@ export default function FAQPage() {
               question={item.question}
               answer={item.answer}
               openheight={item.aline == 2 ? 181 : 158}
+              smallheight={item.smallheight}
             />
           ))}
         </ul>
