@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.scss";
 import { IoMenu } from "react-icons/io5";
 import Logo from "../../assets/images/mainlogo.jpg";
@@ -27,6 +27,8 @@ const menulist = [
 ];
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header>
       <div className="inline_wide">
@@ -42,10 +44,43 @@ export default function Header() {
         </ul>
       </div>
       <div className="inline_small">
-        <a href="/" className="logo">
-          <img src={Logo} alt="" />
-        </a>
-        <IoMenu className="menubtn" />
+        <div className="top">
+          <a href="/" className="logo">
+            <img src={Logo} alt="" />
+          </a>
+          <IoMenu
+            className="menubtn"
+            onClick={() => {
+              if (menuOpen) {
+                setMenuOpen(false);
+              } else {
+                setMenuOpen(true);
+              }
+            }}
+          />
+        </div>
+        {/* <div
+          className="downmenu"
+          style={{
+            opacity: menuOpen ? "1" : "1",
+            top: menuOpen ? "90px" : "-242px",
+          }}
+        >
+          <ul>
+            <li>
+              <a href="">홈</a>
+            </li>
+            <li>
+              <a href="/act">활동</a>
+            </li>
+            <li>
+              <a href="/recruit">모집</a>
+            </li>
+            <li style={{ border: "none" }}>
+              <a href="/login">로그인</a>
+            </li>
+          </ul>
+        </div> */}
       </div>
     </header>
   );
