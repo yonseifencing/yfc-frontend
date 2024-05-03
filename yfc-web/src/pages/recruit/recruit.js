@@ -10,7 +10,7 @@ export default function RecruitDetailPage() {
       <div className="now">
         <img src={nowImage} alt="" />
         <div className="textbox">
-          <h2>지금은 모집기간이 아닙니다.</h2>
+          <h2>지금은 모집 기간이 아닙니다.</h2>
           <h3>다음 기수는 9월 모집 예정입니다.</h3>
         </div>
       </div>
@@ -18,7 +18,7 @@ export default function RecruitDetailPage() {
         <img src={nowImage479} alt="" />
         <div className="gray"></div>
         <div className="textbox">
-          <h2>지금은 모집기간이 아닙니다.</h2>
+          <h2>지금은 모집 기간이 아닙니다.</h2>
           <h3>다음 기수는 9월 모집 예정입니다.</h3>
         </div>
       </div>

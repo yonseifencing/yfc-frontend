@@ -70,17 +70,19 @@ const faqlist = [
 ];
 
 export default function FAQPage() {
-  const [size, setSize] = useState("");
+  const [faqhei, setFaqhei] = useState(540);
 
-  window.addEventListener("resize", () => {
-    if (window.innerWidth <= 479) {
-      setSize("vs");
-    } else if (window.innerWidth > 768) {
-      setSize("m");
+  const clickArrow = (height, isOpen) => {
+    if (isOpen) {
+      setFaqhei(faqhei + height - 60);
+    } else {
+      setFaqhei(faqhei - height + 60);
     }
-  });
+    console.log(faqhei);
+  };
+
   return (
-    <div className="home-recruit">
+    <div className="home-recruit" style={{ height: faqhei }}>
       <div className="faq">
         <h5>FAQ</h5>
         <h3>자주 묻는 질문</h3>
@@ -93,6 +95,7 @@ export default function FAQPage() {
               answer={item.answer}
               openheight={item.aline == 2 ? 181 : 158}
               smallheight={item.smallheight}
+              clickfunction={clickArrow}
             />
           ))}
         </ul>

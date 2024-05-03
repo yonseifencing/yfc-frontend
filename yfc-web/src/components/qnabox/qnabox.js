@@ -8,6 +8,7 @@ export default function QNAbox({
   answer,
   openheight,
   smallheight,
+  clickfunction,
 }) {
   const [open, setOpen] = useState(false);
 
@@ -91,8 +92,10 @@ export default function QNAbox({
               onClick={() => {
                 if (open) {
                   setOpen(false);
+                  clickfunction(smallheight, false);
                 } else {
                   setOpen(true);
+                  clickfunction(smallheight, true);
                 }
                 console.log(open);
               }}

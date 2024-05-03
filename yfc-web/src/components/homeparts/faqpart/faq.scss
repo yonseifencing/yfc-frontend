@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   // align-items: center;
+  overflow: hidden;
 
   .faq {
     height: 1400px;
@@ -145,12 +146,13 @@
 @media all and (max-width: 479px) {
   .home-recruit {
     width: 100vw;
-    height: 930px;
+    height: 540px;
+    // border: 1px solid red;
 
     .faq {
       width: 100%;
       padding: 10px 9px;
-      height: 900px;
+      height: 540px;
 
       h5 {
         width: 100%;

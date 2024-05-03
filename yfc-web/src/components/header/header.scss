@@ -96,11 +96,13 @@ header {
       }
 
       .menubtn {
-        width: 50px;
+        width: 60px;
         height: 50px;
         margin-top: 5px;
         padding: 7px;
+        padding-left: 10px;
         font-size: 35px;
+        // border: 1px solid red;
       }
 
       .menubtn:hover {
@@ -129,7 +131,7 @@ header {
         display: flex;
         flex-direction: column;
         border-top: 1px solid lightgray;
-        border-bottom: 1px solid lightgray;
+        // border-bottom: 1px solid lightgray;
 
         li {
           height: 60px;
@@ -181,7 +183,7 @@ header {
   header {
     .inline_small {
       .downmenu {
-        height: 222px;
+        height: 221px;
         ul {
           li {
             height: 55px;

@@ -68,18 +68,11 @@ export default function Header() {
           }}
         >
           <ul>
-            <li>
-              <a href="">홈</a>
-            </li>
-            <li>
-              <a href="/act">활동</a>
-            </li>
-            <li>
-              <a href="/recruit">모집</a>
-            </li>
-            <li style={{ border: "none" }}>
-              <a href="/login">로그인</a>
-            </li>
+            {menulist.map((item) => (
+              <li key={item.id}>
+                <a href={item.link}>{item.title}</a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
