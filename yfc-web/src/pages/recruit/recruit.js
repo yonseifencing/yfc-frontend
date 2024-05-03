@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./recruit.scss";
 import { SlArrowDown } from "react-icons/sl";
 import nowImage from "../../assets/images/recruitImage.jpg";
+import nowImage479 from "../../assets/images/recruitImage479.jpg";
 
 export default function RecruitDetailPage() {
   return (
@@ -13,7 +14,15 @@ export default function RecruitDetailPage() {
           <h3>다음 기수는 9월 모집 예정입니다.</h3>
         </div>
       </div>
-      <div className="target">
+      <div className="now_small">
+        <img src={nowImage479} alt="" />
+        <div className="gray"></div>
+        <div className="textbox">
+          <h2>지금은 모집기간이 아닙니다.</h2>
+          <h3>다음 기수는 9월 모집 예정입니다.</h3>
+        </div>
+      </div>
+      {/* <div className="target">
         <h3>지원 방법</h3>
         <div className="targetbox">
           <div>
@@ -102,7 +111,7 @@ export default function RecruitDetailPage() {
           바디와이어 장비 구매가 필수입니다. (이후 공동구매를 진행하여 15,000 ~
           49,000원 제품 중 본인이 선택)
         </h4>
-      </div>
+      </div> */}
     </div>
   );
 }

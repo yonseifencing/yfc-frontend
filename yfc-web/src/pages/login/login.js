@@ -8,13 +8,11 @@ export default function LoginPage() {
   const handleInputId = (e) => {
     setId(e.target.value);
     console.log("id: " + id);
-    console.log(id == "qwer");
   };
 
   const handleInputPw = (e) => {
     setPw(e.target.value);
     console.log("pw: " + pw);
-    console.log(pw == "1234");
   };
 
   const handleClickButton = (e) => {

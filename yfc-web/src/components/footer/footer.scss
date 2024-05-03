@@ -120,6 +120,7 @@ footer {
       }
     }
   }
+
   button {
     width: 68px;
     height: 68px;
@@ -144,7 +145,30 @@ footer {
     cursor: pointer;
   }
 
-  @media screen and (max-width: 580px) {
+  // @media screen and (max-width: 580px) {
+  //   .inline_wide {
+  //     display: none;
+  //   }
+
+  //   .inline_small {
+  //     display: flex;
+  //   }
+
+  //   button {
+  //     width: 58px;
+  //     height: 58px;
+  //     border-radius: 23px;
+
+  //     svg {
+  //       width: 25px;
+  //       height: 25px;
+  //     }
+  //   }
+  // }
+}
+
+@media screen and (max-width: 580px) {
+  footer {
     .inline_wide {
       display: none;
     }
@@ -161,6 +185,32 @@ footer {
       svg {
         width: 25px;
         height: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  footer {
+    .inline_small {
+      .sns {
+        .links {
+          a {
+            svg {
+              padding: 10px;
+            }
+
+            .facebooklink {
+              padding: 12px;
+              margin-right: -8px;
+            }
+
+            .youtubelink {
+              padding: 8px;
+              margin-left: -2px;
+            }
+          }
+        }
       }
     }
   }
