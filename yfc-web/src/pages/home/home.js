@@ -4,6 +4,7 @@ import MainPic from "../../components/homeparts/mainpic/mainpic.js";
 import AboutPage from "../about/about";
 import ActPage from "../act/act";
 import FAQPage from "../../components/homeparts/faqpart/faq.js";
+import AboutPart from "../../components/homeparts/aboutpart/aboutpart.js";
 
 export default function HomePage() {
   return (
@@ -11,7 +12,7 @@ export default function HomePage() {
       <MainPic />
       {/* <AboutPage /> */}
       {/* <ActPage /> */}
-
+      <AboutPart />
       <FAQPage />
     </div>
   );

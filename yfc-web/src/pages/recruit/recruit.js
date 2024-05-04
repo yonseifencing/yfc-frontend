@@ -1,14 +1,35 @@
 import React, { useState } from "react";
 import "./recruit.scss";
+import ColorTxtBlock from "../../components/colortxtblock/colortxtblock";
 import { SlArrowDown } from "react-icons/sl";
 import nowImage from "../../assets/images/recruitImage.jpg";
 import nowImage479 from "../../assets/images/recruitImage479.jpg";
+
+const textlist = [
+  {
+    title: "지원 대상",
+    content: [
+      "연속 2학기 이상 활동할 수 있는 사람",
+      "신촌 운동에 참여할 수 있는 사람",
+      "대학생/대학원생 누구나",
+    ],
+  },
+  {
+    title: "지원 대상",
+    content: [
+      "연속 2학기 이상 활동할 수 있는 사람",
+      "신촌 운동에 참여할 수 있는 사람",
+      "대학생/대학원생 누구나",
+    ],
+  },
+];
 
 export default function RecruitDetailPage() {
   return (
     <div className="recruit">
       <div className="now">
         <img src={nowImage} alt="" />
+        <div className="gray"></div>
         <div className="textbox">
           <h2>지금은 모집 기간이 아닙니다.</h2>
           <h3>다음 기수는 9월 모집 예정입니다.</h3>
@@ -22,7 +43,8 @@ export default function RecruitDetailPage() {
           <h3>다음 기수는 9월 모집 예정입니다.</h3>
         </div>
       </div>
-      {/* <div className="target">
+      <ColorTxtBlock title="제목" content={textlist[0]["content"]} />
+      <div className="target">
         <h3>지원 방법</h3>
         <div className="targetbox">
           <div>
@@ -111,7 +133,7 @@ export default function RecruitDetailPage() {
           바디와이어 장비 구매가 필수입니다. (이후 공동구매를 진행하여 15,000 ~
           49,000원 제품 중 본인이 선택)
         </h4>
-      </div> */}
+      </div>
     </div>
   );
 }
