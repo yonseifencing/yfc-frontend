@@ -1,26 +1,26 @@
 import React, { useState } from "react";
 import "./header.scss";
 import { IoMenu } from "react-icons/io5";
-import MainLogo from "../../assets/images/mainlogo.jpg";
+import mainlogoImg from "../../assets/images/mainlogo.jpg";
 
-const menulist = [
+const navbarlist = [
   {
-    id: "menu1",
+    id: "nav1",
     title: "홈",
     link: "/",
   },
   {
-    id: "menu2",
+    id: "nav2",
     title: "활동",
     link: "/act",
   },
   {
-    id: "menu3",
+    id: "nav3",
     title: "모집",
     link: "/recruit",
   },
   {
-    id: "menu4",
+    id: "nav4",
     title: "로그인",
     link: "/login",
   },
@@ -29,46 +29,40 @@ const menulist = [
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleClickNavbtn = () => {
+    setMenuOpen((menuopen) => !menuopen);
+  };
+
   return (
     <header>
-      <div className="inline_wide">
-        <a href="/" className="logo">
-          <img src={MainLogo} alt="" />
+      <div className="header_inner_wide">
+        <a href="/" className="mainlogo">
+          <img src={mainlogoImg} alt="" />
         </a>
-        <ul className="menu">
-          {menulist.map((item) => (
+        <ul className="navbar">
+          {navbarlist.map((item) => (
             <li key={item.id}>
               <a href={item.link}>{item.title}</a>
             </li>
           ))}
         </ul>
       </div>
-      <div className="inline_small">
-        <div className="top">
-          <a href="/" className="logo">
-            <img src={MainLogo} alt="" />
+      <div className="header_inner_small">
+        <div className="header_inner_small_top">
+          <a href="/" className="mainlogo">
+            <img src={mainlogoImg} alt="" />
           </a>
-          <IoMenu
-            className="menubtn"
-            onClick={() => {
-              if (menuOpen) {
-                setMenuOpen(false);
-              } else {
-                setMenuOpen(true);
-              }
-            }}
-          />
+          <IoMenu className="navbtn" onClick={handleClickNavbtn} />
         </div>
-        <div className="coverwhite"></div>
+        <div className="header_inner_coverwhite"></div>
         <div
-          className="downmenu"
+          className="header_inner_small_navbar"
           style={{
-            opacity: menuOpen ? "1" : "1",
             top: menuOpen ? "90px" : "-245px",
           }}
         >
           <ul>
-            {menulist.map((item) => (
+            {navbarlist.map((item) => (
               <li key={item.id}>
                 <a href={item.link}>{item.title}</a>
               </li>

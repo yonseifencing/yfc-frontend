@@ -4,13 +4,14 @@ import ImageCard from "../../imagecard/imagecard";
 import Exchange53Img from "../../../assets/images/act/exchange53.jpg";
 import Fenbam1065Img from "../../../assets/images/act/fenbam1065.jpg";
 import YcupImg from "../../../assets/images/act/YCUP.jpg";
+import TrainingImg from "../../../assets/images/act/training.jpg";
 
 const imgcardlist = [
   {
     id: "c1",
     title: "정규 훈련",
     hashtag: "#체력운동 #풋워크 #연습경기",
-    img: Exchange53Img,
+    img: TrainingImg,
   },
   {
     id: "c2",
