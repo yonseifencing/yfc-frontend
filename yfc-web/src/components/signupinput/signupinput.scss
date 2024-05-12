@@ -1,0 +1,87 @@
+.signupinput {
+  //   border: 1px solid blue;
+
+  h3 {
+    padding: 6px 0 4px 2px;
+    text-align: start;
+    font-size: 17px;
+  }
+
+  p {
+    text-align: start;
+    font-weight: 400;
+    font-size: 14.5px;
+    padding: 0 0 3px 2px;
+    color: #808080;
+  }
+
+  .idinput {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    input {
+      width: 70%;
+      margin: 0;
+    }
+
+    button {
+      width: 30%;
+      margin: 0;
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .signupinput {
+    margin-bottom: 10px;
+    // border: 1px solid blue;
+
+    h3 {
+      padding: 6px 2px;
+      text-align: start;
+      font-size: 18.5px;
+    }
+
+    p {
+      text-align: start;
+      font-weight: 400;
+      font-size: 14.5px;
+      padding: 0 0 6px 2px;
+      color: #808080;
+    }
+
+    input {
+      width: 100%;
+      height: 50px;
+      //   margin-top: 3px;
+      //   margin-bottom: 8px;
+      padding: 0 10px;
+      font-size: 16.7px;
+      border: 2px solid rgb(224, 224, 224);
+      border-radius: 3px;
+      outline: none;
+    }
+
+    .idinput {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      input {
+        width: 70%;
+        margin: 0;
+        border-right: none;
+      }
+
+      button {
+        width: 30%;
+        height: 50px;
+        font-size: 15.5px;
+        margin-left: -3px;
+        margin: 0;
+        border-radius: 3px;
+      }
+    }
+  }
+}

@@ -1,21 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
 
-.mainpic {
+.mainimg {
   width: 100vw;
+  // height: 53.7vw;
   height: 46.8vw;
-  // border: 1px solid red;
-  // overflow: hidden;
+  // height: calc(100vh - 90px);
   display: flex;
   flex-direction: column;
   position: relative;
 
-  .main_wide {
+  .mainimg_wide {
     display: flex;
     justify-content: center;
 
     img {
       width: 100vw;
       height: 46.8vw;
+      // height: 53.7vw;
     }
 
     .black {
@@ -30,17 +31,23 @@
 
       .txtbox {
         width: 707px;
-        padding-top: 580px;
+        height: 100%;
+        padding-bottom: 20px;
+        // padding-top: 580px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
         text-align: center;
         z-index: 30;
-        font-family: "Josefin Slab", serif;
         font-weight: 300;
         white-space: nowrap;
 
         p {
           color: white;
           font-size: 75px;
+          // margin-bottom: 10px;
           text-shadow: 0 0 5px black;
+          font-family: "Josefin Slab", serif;
         }
       }
     }
@@ -58,7 +65,7 @@
     }
   }
 
-  .main_small {
+  .mainimg_small {
     display: none;
 
     img {
@@ -77,7 +84,6 @@
 
       .txt {
         width: 60%;
-        // border: 1px solid red;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -103,10 +109,6 @@
           border-radius: 17px;
           font-size: 20px;
           font-weight: 600;
-          font-family: "Pretendard Variable", Pretendard, -apple-system,
-            BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-            "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
-            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
         }
 
         a:hover {
@@ -120,41 +122,36 @@
           margin-left: 0;
         }
       }
+    }
+  }
+}
 
-      // @media all and (min-width: 480px) and (max-width: 768px) {
-      //   .txt {
-      //     // border: 1px solid red;
-      //     width: 60vw;
-      //     height: 41.5vw;
+@media all and (max-width: 768px) {
+  .mainimg {
+    height: 69.31vw;
 
-      //     h3 {
-      //       margin: 12% 0 9% 0;
-      //       font-size: 4.7vw;
-      //     }
+    .mainimg_wide {
+      display: none;
+    }
 
-      //     a {
-      //       width: 50%;
-      //       height: 23%;
-      //       font-size: 3.8vw;
-      //     }
-      //   }
-      // }
+    .mainimg_small {
+      display: block;
 
-      @media all and (max-width: 768px) {
+      .gray {
         .txt {
           // border: 1px solid red;
-          width: 60vw;
-          height: 41.5vw;
+          width: 350px;
+          height: 250px;
 
           h3 {
-            margin: 12% 0 9% 0;
-            font-size: 4.7vw;
+            margin: 40px 0 25px 0;
+            font-size: 25.5px;
           }
 
           a {
-            width: 50%;
-            height: 23%;
-            font-size: 3.8vw;
+            width: 170px;
+            height: 55px;
+            font-size: 19.5px;
           }
         }
       }
@@ -162,16 +159,26 @@
   }
 }
 
-@media all and (max-width: 768px) {
-  .mainpic {
-    height: 69.31vw;
+@media all and (max-width: 480px) {
+  .mainimg {
+    .mainimg_small {
+      .gray {
+        .txt {
+          width: 280px;
+          height: 200px;
 
-    .main_wide {
-      display: none;
-    }
+          h3 {
+            margin: 34px 0 25px 0;
+            font-size: 22.5px;
+          }
 
-    .main_small {
-      display: block;
+          a {
+            width: 150px;
+            height: 50px;
+            font-size: 18px;
+          }
+        }
+      }
     }
   }
 }

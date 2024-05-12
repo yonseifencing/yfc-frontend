@@ -1,31 +1,60 @@
 import React, { useState } from "react";
 import "./signup.scss";
+import SignUpInput from "../../components/signupinput/signupinput";
+
+const inputlist = [
+  {
+    id: "id",
+    title: "아이디",
+    text: "학번.yfc 형식으로 입력해주세요.",
+    isId: true,
+  },
+  {
+    id: "pw",
+    title: "비밀번호",
+    text: "영문자, 숫자를 포함한 8자 이상으로 입력해주세요.",
+    isId: false,
+  },
+  { id: "pw_r", title: "비밀번호 확인", text: "no", isId: false },
+  { id: "name", title: "이름", text: "no", isId: false },
+  { id: "phonenumber", title: "전화번호", text: "no", isId: false },
+  { id: "major", title: "학과", text: "no", isId: false },
+  { id: "year", title: "입부년도", text: "no", isId: false },
+];
 
 export default function SignUpPage() {
-  const [id, setId] = useState("");
-  const [pw, setPw] = useState("");
-  const [pw_r, setPw_r] = useState("");
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [major, setMajor] = useState("");
-  const [year, setYear] = useState("");
+  const [userData, setUserData] = useState({
+    id: "",
+    pw: "",
+    name: "",
+    phonenumber: "",
+    major: "",
+    year: "",
+  });
 
-  // 아이디
+  const handleInputChange = (inputIdentifier, newValue) => {
+    setUserData((prevData) => {
+      return { ...prevData, [inputIdentifier]: newValue };
+    });
+    console.log(userData);
+  };
+
+  const handleRegCheck = () => {};
 
   // 비밀번호
-  const regPw = /^[A-Za-z0-9]{8,}$/;
-  const [pwchecktxt, setPwchecktxt] = useState("");
-  const [pwtxtcolor, setPwtxtcolor] = useState("");
+  // const regPw = /^[A-Za-z0-9]{8,}$/;
+  // const [pwchecktxt, setPwchecktxt] = useState("");
+  // const [pwtxtcolor, setPwtxtcolor] = useState("");
 
-  const pwCheck = (e) => {
-    if (regPw.test(pw)) {
-      setPwchecktxt("사용 가능한 비밀번호입니다.");
-      setPwtxtcolor("yellowgreen");
-    } else {
-      setPwchecktxt("비밀번호를 다시 확인해주세요.");
-      setPwtxtcolor("red");
-    }
-  };
+  // const pwCheck = (e) => {
+  //   if (regPw.test(pw)) {
+  //     setPwchecktxt("사용 가능한 비밀번호입니다.");
+  //     setPwtxtcolor("yellowgreen");
+  //   } else {
+  //     setPwchecktxt("비밀번호를 다시 확인해주세요.");
+  //     setPwtxtcolor("red");
+  //   }
+  // };
 
   // 휴대폰번호
   const regPhone = /\d{2,3}-\d{3,4}-\d{4}/g;
@@ -38,17 +67,28 @@ export default function SignUpPage() {
 
   return (
     <div className="signup">
-      <form action="">
+      <form>
         <h4>회원가입</h4>
-        <h3>아이디</h3>
-        <h5>본인학번.yfc 형식으로 입력해주세요.</h5>
-        <div className="idbox">
-          <input type="text" placeholder="아이디 (학번.yfc 형식)" />
-          <button>중복 확인</button>
-        </div>
-        <h3>비밀번호</h3>
-        <h5>영문자, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</h5>
-        <input
+
+        {inputlist.map((item) => (
+          <SignUpInput
+            title={item.title}
+            text={item.text}
+            isId={item.isId}
+            onChange={(e) => {
+              if (item.id === "phonenumber") {
+                e.target.value = e.target.value.replace(
+                  /(\d{3})(\d{4})(\d)/,
+                  "$1-$2-$3"
+                );
+              }
+              handleInputChange(item.id, e.target.value);
+            }}
+            onInput={item.id == "phonenumber" ? changeInputphone : () => {}}
+          />
+        ))}
+
+        {/* <input
           type="password"
           placeholder="비밀번호"
           onChange={(e) => {
@@ -59,34 +99,8 @@ export default function SignUpPage() {
         <div className="pwchecktext" style={{ color: pwtxtcolor }}>
           {pwchecktxt}
         </div>
-        <h3>비밀번호 확인</h3>
-        <input
-          type="password"
-          placeholder="비밀번호 확인"
-          onChange={(e) => {
-            setPw_r(e.target.value);
-          }}
-        />
-
-        <h3 className="nametxt">이름</h3>
-        <input type="text" placeholder="이름" />
-        <h3>휴대폰번호</h3>
-        <input
-          type="text"
-          placeholder="휴대폰번호"
-          onChange={(e) => {
-            e.target.value = e.target.value.replace(
-              /(\d{3})(\d{4})(\d)/,
-              "$1-$2-$3"
-            );
-            setPhone(e.target.value);
-          }}
-          onInput={changeInputphone}
-        />
-        <h3>학과</h3>
-        <input type="text" placeholder="학과" />
-        <h3>입부년도</h3>
-        <input type="text" placeholder="입부년도" />
+         */}
+        {/* <div className="sizedbox"></div> */}
 
         <button>회원가입</button>
       </form>

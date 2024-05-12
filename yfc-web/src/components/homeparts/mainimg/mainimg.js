@@ -1,16 +1,12 @@
 import React from "react";
-import "./mainpic.scss";
-
+import "./mainimg.scss";
 import MainPhoto1 from "../../../assets/images/mainpic.png";
-import ClubImg from "../../../assets/images/home/fencingclubImg479.png";
+import SmallMainImg from "../../../assets/images/home/smallmainimg.png";
 
 export default function MainPic() {
-  window.addEventListener("resize", () => {
-    console.log(window.innerHeight);
-  });
   return (
-    <div className="mainpic">
-      <div className="main_wide">
+    <div className="mainimg">
+      <div className="mainimg_wide">
         <img src={MainPhoto1} alt="" />
         <div className="black">
           <div className="txtbox">
@@ -19,8 +15,8 @@ export default function MainPic() {
         </div>
         {/* <div className="gradient"></div> */}
       </div>
-      <div className="main_small">
-        <img src={ClubImg} alt="" />
+      <div className="mainimg_small">
+        <img src={SmallMainImg} alt="" />
         <div className="gray">
           <div className="txt">
             <h3>연세펜싱부와 함께 하세요!</h3>

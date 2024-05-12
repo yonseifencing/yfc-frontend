@@ -1,10 +1,10 @@
 .imagecard {
-  width: calc(50vw - 30px);
-  height: calc(60vw - 36px);
+  width: 45.5vw;
+  height: 54.6vw;
   padding: 30px;
   //   border: 1px solid white;
   position: relative;
-  margin: 7px;
+  margin: 1.5vw;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
@@ -46,6 +46,7 @@
       color: rgb(159, 159, 159);
       margin-top: 4px;
       font-weight: 500;
+      margin: 4px 0 0 0;
     }
   }
 }

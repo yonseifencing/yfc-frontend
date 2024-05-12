@@ -22,19 +22,19 @@
       font-weight: 600;
     }
 
-    h3 {
-      padding: 6px 0 4px 2px;
-      text-align: start;
-      font-size: 17px;
-    }
+    // h3 {
+    //   padding: 6px 0 4px 2px;
+    //   text-align: start;
+    //   font-size: 17px;
+    // }
 
-    h5 {
-      text-align: start;
-      font-weight: 400;
-      font-size: 14.5px;
-      padding: 0 0 3px 2px;
-      color: #808080;
-    }
+    // p {
+    //   text-align: start;
+    //   font-weight: 400;
+    //   font-size: 14.5px;
+    //   padding: 0 0 3px 2px;
+    //   color: #808080;
+    // }
 
     .idbox {
       display: flex;
@@ -56,16 +56,16 @@
       }
     }
 
-    input {
-      height: 54px;
-      margin-top: 3px;
-      margin-bottom: 8px;
-      padding: 0 10px;
-      font-size: 16.7px;
-      border: 2px solid rgb(224, 224, 224);
-      border-radius: 5px;
-      outline: none;
-    }
+    // input {
+    //   height: 54px;
+    //   margin-top: 3px;
+    //   margin-bottom: 8px;
+    //   padding: 0 10px;
+    //   font-size: 16.7px;
+    //   border: 2px solid rgb(224, 224, 224);
+    //   border-radius: 5px;
+    //   outline: none;
+    // }
 
     input::placeholder {
       color: rgb(180, 180, 180);
@@ -85,7 +85,13 @@
     .nametxt {
       margin-top: 30px;
     }
+    .ip4 {
+      margin-top: 30px;
+    }
 
+    .sizedbox {
+      height: 35px;
+    }
     button {
       height: 54px;
       margin-top: 10px;
@@ -104,6 +110,21 @@
 
     button:hover {
       cursor: pointer;
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .signup {
+    form {
+      width: 330px;
+      padding: 15px;
+      border: 1px solid red;
+
+      h4 {
+        margin: 0 0 40px 0;
+        font-size: 29px;
+      }
     }
   }
 }

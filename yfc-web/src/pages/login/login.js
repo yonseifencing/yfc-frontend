@@ -7,7 +7,6 @@ export default function LoginPage() {
 
   const handleInputId = (e) => {
     setId(e.target.value);
-    console.log("id: " + id);
   };
 
   const handleInputPw = (e) => {
@@ -53,7 +52,7 @@ export default function LoginPage() {
         />
         <button
           style={{
-            opacity: id.length != "" && pw.length != "" ? "0.8" : "0.5",
+            opacity: id.length != "" && pw.length != "" ? "0.7" : "0.5",
           }}
           onClick={handleClickButton}
         >
