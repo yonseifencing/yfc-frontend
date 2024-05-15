@@ -11,16 +11,11 @@ const navbarlist = [
   },
   {
     id: "nav2",
-    title: "활동",
-    link: "/act",
-  },
-  {
-    id: "nav3",
     title: "모집",
     link: "/recruit",
   },
   {
-    id: "nav4",
+    id: "nav3",
     title: "로그인",
     link: "/login",
   },

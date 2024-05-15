@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./login.scss";
+// import fetch from "node-fetch";
 
 export default function LoginPage() {
+  const navigate = useNavigate();
   const [id, setId] = useState("");
   const [pw, setPw] = useState("");
 
@@ -21,28 +24,33 @@ export default function LoginPage() {
   };
 
   const onSubmit = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     fetch(
-      "https://port-0-yfc-backend11-754g42aluti5qxg.sel5.cloudtype.app/login",
+      "https://port-0-yfc-backend11-754g42alutk1q0d.sel5.cloudtype.app/login/",
       {
+        mode: "no-cors",
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ id: id, pw: pw }),
+        dataType: "json",
+        headers: {
+          "Content-Type": "application/json",
+          accept: "application/json",
+        },
+        body: JSON.stringify({ student_number: id, password: pw }),
       }
-    );
-    // .then((res) => res.json());
-    // .then((data) => {
-    //   if (data) {
-    //     navigate("/");
-    //   } else {
-    //     alert("로그인 실패");
-    //   }
-    // });
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        if (data) {
+          console.log(data);
+        } else {
+          alert("로그인 실패");
+        }
+      });
   };
 
   return (
     <div className="login">
-      <form action="">
+      <form onSubmit={onSubmit}>
         <h4>로그인</h4>
         <input type="text" placeholder="아이디" onChange={handleInputId} />
         <input
