@@ -43,7 +43,7 @@ const imgcardlist = [
   {
     id: "c6",
     title: "MT",
-    hashtag: "#놀러가서도 #결국 펜싱얘기 ",
+    hashtag: "#놀러가도 #결국 #펜싱얘기 ",
     img: Fenbam1065Img,
   },
 ];
