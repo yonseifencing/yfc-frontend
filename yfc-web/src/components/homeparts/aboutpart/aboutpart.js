@@ -1,13 +1,13 @@
 import React from "react";
 import "./aboutpart.scss";
 import ImageCard from "../../imagecard/imagecard";
-import Exchange53Img from "../../../assets/images/act/exchange53.jpg";
-import Fenbam1065Img from "../../../assets/images/act/fenbam1065.jpg";
-import YcupImg from "../../../assets/images/act/YCUP.jpg";
-import TrainingImg from "../../../assets/images/act/training.jpg";
-import About1Img from "../../../assets/images/home/aboutimg1.jpg";
-import About2Img from "../../../assets/images/home/aboutimg2.jpg";
-import About3Img from "../../../assets/images/home/aboutimg3.jpg";
+// 이미지
+import TrainingImg from "../../../assets/images/about/training.jpg";
+import ExchangeImg from "../../../assets/images/about/exchange.jpg";
+import CompetitionImg from "../../../assets/images/about/competition.jpg";
+import YcupImg from "../../../assets/images/about/ycup.jpg";
+import FenbamImg from "../../../assets/images/about/fenbam.jpg";
+import MTImg from "../../../assets/images/about/mt.jpg";
 
 const imgcardlist = [
   {
@@ -19,32 +19,32 @@ const imgcardlist = [
   {
     id: "c2",
     title: "교류전",
-    // hashtag: "#월수금토 #다목적실",
-    img: About3Img,
+    hashtag: "#타대학 #펜싱부 #펜싱클럽",
+    img: ExchangeImg,
   },
   {
     id: "c3",
     title: "대회",
-    // hashtag: "#YB #OB #연말정산",
-    img: Exchange53Img,
+    hashtag: "#대학배 #메달 #응원 ",
+    img: CompetitionImg,
   },
   {
     id: "c4",
     title: "Y-CUP",
-    hashtag: "#연대 #주최 #펜싱대회",
+    hashtag: "#연세대 #주최 #펜싱대회",
     img: YcupImg,
   },
   {
     id: "c5",
     title: "펜싱인의 밤",
     hashtag: "#YB #OB #연말정산",
-    img: Fenbam1065Img,
+    img: FenbamImg,
   },
   {
     id: "c6",
     title: "MT",
-    hashtag: "#놀러가도 #결국 #펜싱얘기 ",
-    img: Fenbam1065Img,
+    hashtag: "#놀러가서도 #결국 #펜싱얘기 ",
+    img: MTImg,
   },
 ];
 export default function AboutPart() {
