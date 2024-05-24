@@ -25,13 +25,13 @@ const imgcardlist = [
   {
     id: "c3",
     title: "대회",
-    hashtag: "#대학배 #메달 #응원 ",
+    hashtag: "#대학배 #SK배 #메달 #응원 ",
     img: CompetitionImg,
   },
   {
     id: "c4",
     title: "Y-CUP",
-    hashtag: "#연세대 #주최 #펜싱대회",
+    hashtag: "#연펜 #주최 #펜싱대회",
     img: YcupImg,
   },
   {
