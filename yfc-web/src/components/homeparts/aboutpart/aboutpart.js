@@ -66,10 +66,6 @@ export default function AboutPart() {
           />
         ))}
       </div>
-      {/* <div className="imgs">
-        <img src={About1Img} alt="" />
-        <img src={About3Img} alt="" />
-      </div> */}
     </div>
   );
 }
