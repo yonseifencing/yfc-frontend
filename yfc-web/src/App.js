@@ -6,6 +6,7 @@ import HomePage from "./pages/home/home";
 import RecruitDetailPage from "./pages/recruit/recruit.js";
 import LoginPage from "./pages/login/login";
 import SignUpPage from "./pages/signup/signup";
+import InnerHomePage from "./pages/innerpages/innerhome/innerhome.js";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/recruit" element={<RecruitDetailPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/inner" element={<InnerHomePage />} />
       </Routes>
       <Footer />
     </div>

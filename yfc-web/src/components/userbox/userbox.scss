@@ -1,0 +1,44 @@
+.userbox {
+  width: 100vw;
+  height: 200px;
+  border: 1px solid red;
+  background-color: #f0f0f0;
+
+  .profile {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+    .userimage {
+      width: 100px;
+      height: 100px;
+      margin: 0 30px 0 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 5px solid black;
+      background-color: none;
+      border-radius: 60px;
+
+      svg {
+        width: 66%;
+        height: 66%;
+        color: black;
+      }
+    }
+
+    .name {
+      font-size: 30px;
+      padding-right: 0px;
+    }
+
+    button {
+      width: 100px;
+      height: 50px;
+      background-color: blue;
+      color: white;
+      font-size: 20px;
+      border-radius: 15px;
+    }
+  }
+}
