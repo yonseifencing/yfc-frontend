@@ -1,4 +1,5 @@
 import React from "react";
+import "./innerhome.scss";
 import UserBox from "../../../components/userbox/userbox";
 import MoveButton from "../../../components/movebutton/movebutton";
 

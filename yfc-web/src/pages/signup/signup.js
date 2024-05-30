@@ -94,6 +94,31 @@ export default function SignUpPage() {
     }
   };
 
+  const registerClick = (e) => {
+    e.preventDefault();
+    fetch(
+      "https://port-0-yfc-backend11-754g42alutk1q0d.sel5.cloudtype.app/signup/",
+      {
+        method: "POST",
+        headers: [["Content-Type", "application/json"]],
+        body: JSON.stringify({
+          student_number: "2020181818",
+          email: "yonfen123@gmail.com",
+          name: "정이삭",
+          password: "qqqqqqqqq1!",
+          password2: "qqqqqqqqq1!",
+          join_year: "2024-1",
+          major: "스포츠응용산업학과",
+          phone_number: "01011111111",
+        }),
+      }
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+  };
+
   return (
     <div className="signup">
       <form>
@@ -119,14 +144,7 @@ export default function SignUpPage() {
             onBlur={item.id == "pw" ? pwCheck : () => {}}
           />
         ))}
-        <button
-          onClick={(e) => {
-            e.preventDefault();
-            console.log(userData);
-          }}
-        >
-          회원가입
-        </button>
+        <button onClick={registerClick}>회원가입</button>
       </form>
     </div>
   );

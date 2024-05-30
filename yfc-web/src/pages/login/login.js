@@ -23,34 +23,28 @@ export default function LoginPage() {
     }
   };
 
-  const onSubmit = (e) => {
+  const loginClick = (e) => {
     e.preventDefault();
     fetch(
       "https://port-0-yfc-backend11-754g42alutk1q0d.sel5.cloudtype.app/login/",
       {
-        mode: "no-cors",
         method: "POST",
-        dataType: "json",
-        headers: {
-          "Content-Type": "application/json",
-          accept: "application/json",
-        },
-        body: JSON.stringify({ student_number: id, password: pw }),
+        headers: [["Content-Type", "application/json"]],
+        body: JSON.stringify({
+          student_number: id,
+          password: pw,
+        }),
       }
     )
       .then((res) => res.json())
       .then((data) => {
-        if (data) {
-          console.log(data);
-        } else {
-          alert("로그인 실패");
-        }
+        console.log(data);
       });
   };
 
   return (
     <div className="login">
-      <form onSubmit={onSubmit}>
+      <form>
         <h4>로그인</h4>
         <input type="text" placeholder="아이디" onChange={handleInputId} />
         <input
@@ -62,7 +56,7 @@ export default function LoginPage() {
           style={{
             opacity: id.length != "" && pw.length != "" ? "0.7" : "0.5",
           }}
-          onClick={handleClickButton}
+          onClick={loginClick}
         >
           로그인
         </button>
