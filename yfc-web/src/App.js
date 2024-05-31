@@ -7,6 +7,7 @@ import RecruitDetailPage from "./pages/recruit/recruit.js";
 import LoginPage from "./pages/login/login";
 import SignUpPage from "./pages/signup/signup";
 import InnerHomePage from "./pages/innerpages/innerhome/innerhome.js";
+import AttendPage from "./pages/attend/attend.js";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/inner" element={<InnerHomePage />} />
+        <Route path="/attend" element={<AttendPage />} />
       </Routes>
       <Footer />
     </div>
