@@ -43,7 +43,7 @@ export default function QNAbox({
         </div>
       </li>
     );
-  } else if (window.innerWidth > 479 && window.innerWidth < 769) {
+  } else if (window.innerWidth > 480 && window.innerWidth < 769) {
     return (
       <li
         className="qnabox"

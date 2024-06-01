@@ -63,7 +63,7 @@
       div {
         height: 40px;
         // border: 1px solid red;
-        font-size: 21px;
+        font-size: 20px;
 
         .arrow {
           width: 40px;
@@ -83,7 +83,7 @@
   }
 }
 
-@media all and (max-width: 479px) {
+@media all and (max-width: 480px) {
   .qnabox {
     width: 100%;
     height: 60px;

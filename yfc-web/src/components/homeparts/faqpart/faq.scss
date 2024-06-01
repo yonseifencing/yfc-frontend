@@ -112,14 +112,14 @@
 
 @media all and (max-width: 768px) {
   .home-recruit {
-    // background-color: red;
+    border: 1px solid blue;
     width: 100vw;
-    height: 930px;
+    height: 600px;
 
     .faq {
       width: 100%;
       padding: 10px 9px;
-      height: 900px;
+      height: 1300px;
 
       h5 {
         width: 100%;
@@ -145,11 +145,13 @@
 
 @media all and (max-width: 480px) {
   .home-recruit {
+    border: 1px solid red;
     width: 100vw;
     height: 540px;
     // border: 1px solid red;
 
     .faq {
+      // color: red;
       width: 100%;
       padding: 10px 9px;
       height: 540px;
