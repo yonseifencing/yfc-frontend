@@ -1,28 +1,29 @@
 .login {
   height: calc(100vh - 320px);
+  min-height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+
   form {
-    // border: 1px solid red;
-    width: 450px;
-    height: 440px;
-    padding: 30px;
+    width: 470px;
+    height: 470px;
+    padding: 50px 40px;
     display: flex;
     flex-direction: column;
     text-align: center;
 
     h4 {
       margin: 0 128px 65px 128px;
-      font-size: 40px;
+      font-size: 45px;
       font-weight: 600;
     }
 
     input {
-      height: 54px;
-      padding: 0 10px;
-      margin-bottom: 8px;
-      font-size: 16.7px;
+      height: 60px;
+      padding: 0 13px;
+      margin-bottom: 11px;
+      font-size: 18px;
       border: 2px solid rgb(224, 224, 224);
       border-radius: 5px;
       outline: none;
@@ -31,7 +32,7 @@
     input::placeholder {
       color: rgb(180, 180, 180);
       font-weight: 500;
-      font-size: 16.7px;
+      font-size: 18px;
       font-family: "Pretendard Variable", Pretendard, -apple-system,
         BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
         "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
@@ -39,14 +40,14 @@
     }
 
     button {
-      height: 54px;
-      margin-top: 10px;
+      height: 60px;
+      margin-top: 13px;
       background-color: #000080;
       opacity: 0.5;
       color: white;
       border: none;
       border-radius: 5px;
-      font-size: 19px;
+      font-size: 22px;
       font-weight: 500;
       font-family: "Pretendard Variable", Pretendard, -apple-system,
         BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
@@ -63,10 +64,51 @@
       justify-content: space-between;
 
       a {
-        padding: 9px 1px;
+        padding: 11px 1px;
         color: black;
-        font-size: 17px;
+        font-size: 18px;
         font-weight: 400;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .login {
+    form {
+      // border: 1px solid red;
+      width: 450px;
+      height: 450px;
+      padding: 48px 40px;
+      padding-top: 50px;
+
+      h4 {
+        margin: 0 0 60px 0;
+        font-size: 42px;
+      }
+
+      input {
+        height: 58px;
+        padding: 0 12px;
+        margin-bottom: 10px;
+        font-size: 17.8px;
+      }
+
+      input::placeholder {
+        font-size: 17.8px;
+      }
+
+      button {
+        height: 58px;
+        margin-top: 12px;
+        font-size: 21px;
+      }
+
+      .links {
+        a {
+          padding: 10px 1px;
+          font-size: 18px;
+        }
       }
     }
   }
@@ -75,7 +117,6 @@
 @media all and (max-width: 768px) {
   .login {
     form {
-      // border: 1px solid red;
       width: 420px;
       height: 420px;
       padding: 42px 30px;
