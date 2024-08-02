@@ -183,22 +183,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      border-top: 6px solid rgb(16, 112, 202);
-      border-bottom: 35px solid rgb(242, 242, 242);
-      padding-bottom: 60px;
-      margin-bottom: -5px;
 
       h2 {
-        font-size: 31px;
-        margin: 70px 0 40px 0;
-        text-align: center;
-        // color: rgb(10, 118, 217);
         color: rgb(60, 60, 60);
+        text-align: center;
       }
 
       a {
         padding: 0 17px;
-        margin-bottom: 7px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -253,6 +245,24 @@
 
     .recruit_small {
       display: block;
+
+      .result {
+        padding-bottom: 100px;
+        border-top: 8px solid rgb(16, 112, 202);
+        border-bottom: 55px solid rgb(242, 242, 242);
+
+        h2 {
+          margin: 90px 0 60px 0;
+          font-size: 35px;
+        }
+
+        a {
+          width: 350px;
+          height: 70px;
+          margin-bottom: 10px;
+          font-size: 18.5px;
+        }
+      }
     }
   }
 }
@@ -277,13 +287,20 @@
       }
 
       .result {
+        padding-bottom: 60px;
+        margin-bottom: -5px;
+        border-top: 6px solid rgb(16, 112, 202);
+        border-bottom: 35px solid rgb(242, 242, 242);
+
         h2 {
+          margin: 70px 0 40px 0;
           font-size: 30px;
         }
 
         a {
           width: 270px;
           height: 57px;
+          margin-bottom: 7px;
           font-size: 16.5px;
         }
       }
