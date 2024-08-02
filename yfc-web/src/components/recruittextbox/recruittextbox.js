@@ -8,7 +8,9 @@ export default function RecruitTextBox({ title, list }) {
         {list.map((item) => (
           <div key={item.id}>
             <h4>{item.title}</h4>
-            {item.content.map((content) => content)}
+            {item.content.map((content) => (
+              <div key={Math.random()}>{content}</div>
+            ))}
           </div>
         ))}
       </div>

@@ -112,15 +112,15 @@ export default function RecruitPage() {
         </div> */}
         <div className="result">
           <h2>
-            2024-2학기
-            <br /> 연세펜싱부 리크루팅
+            2024년도 2학기 <br />
+            연세펜싱부 신입부원 모집
           </h2>
-          <a href="/writerecruit">
-            <span>지원하기</span>
+          <a href="">
+            <span>지원 구글폼</span>
             <FaArrowRightLong />
           </a>
-          <a href="resultrecruit" className="recruit_btn_green">
-            <span>모집결과 발표</span>
+          <a href="recruit/result" className="recruit_btn_green">
+            <span>모집결과 조회</span>
             <FaArrowRightLong />
           </a>
         </div>
@@ -130,7 +130,7 @@ export default function RecruitPage() {
           <div className="notes">
             <h3>참고사항</h3>
             {noteslist.map((note) => (
-              <p>{note}</p>
+              <p key={Math.random()}>{note}</p>
             ))}
           </div>
         </div>
