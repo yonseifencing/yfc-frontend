@@ -116,7 +116,7 @@ export default function RecruitPage() {
             연세펜싱부 신입부원 모집
           </h2>
           <a href="">
-            <span>지원 구글폼</span>
+            <span>지원서 작성</span>
             <FaArrowRightLong />
           </a>
           <a href="recruit/result" className="recruit_btn_green">
