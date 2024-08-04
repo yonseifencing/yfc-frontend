@@ -119,7 +119,7 @@ export default function RecruitPage() {
             <span>지원서 작성</span>
             <FaArrowRightLong />
           </a>
-          <a href="recruit/result" className="recruit_btn_green">
+          <a href="recruit/searchresult" className="recruit_btn_green">
             <span>모집결과 조회</span>
             <FaArrowRightLong />
           </a>

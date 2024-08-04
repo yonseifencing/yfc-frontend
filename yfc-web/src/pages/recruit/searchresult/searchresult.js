@@ -1,10 +1,10 @@
 import React from "react";
-import "./recruitresult.scss";
+import "./searchresult.scss";
 
-export default function RecruitResultPage() {
+export default function SearchResultPage() {
   return (
-    <div className="recruitresult">
-      <div className="resulttop">
+    <div className="recruit_result">
+      <div className="recruit_result_header">
         <p>합격자 조회</p>
       </div>
       <form>
@@ -17,7 +17,7 @@ export default function RecruitResultPage() {
           <span>학번</span>
           <input type="number" />
         </div>
-        <button>검색</button>
+        <button onClick="">검색</button>
       </form>
     </div>
   );
