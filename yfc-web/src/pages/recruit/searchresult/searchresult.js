@@ -2,9 +2,14 @@ import React from "react";
 import "./searchresult.scss";
 
 export default function SearchResultPage() {
+  const handleClick = (e) => {
+    e.preventDefault();
+    window.location.href = "/recruit/result";
+  };
+
   return (
-    <div className="recruit_result">
-      <div className="recruit_result_header">
+    <div className="search_result">
+      <div className="search_result_header">
         <p>합격자 조회</p>
       </div>
       <form>
@@ -17,7 +22,7 @@ export default function SearchResultPage() {
           <span>학번</span>
           <input type="number" />
         </div>
-        <button onClick="">검색</button>
+        <button onClick={handleClick}>검색</button>
       </form>
     </div>
   );

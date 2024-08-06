@@ -1,7 +1,7 @@
-.recruit_result {
+.search_result {
   height: calc(100vh - 321px);
 
-  .recruit_result_header {
+  .search_result_header {
     height: 55px;
     display: flex;
     justify-content: center;
@@ -55,8 +55,8 @@
 }
 
 @media all and (max-width: 768px) {
-  .recruit_result {
-    .recruit_result_header {
+  .search_result {
+    .search_result_header {
       height: 60px;
       font-size: 25px;
     }
@@ -89,8 +89,8 @@
 }
 
 @media all and (max-width: 480px) {
-  .recruit_result {
-    .recruit_result_header {
+  .search_result {
+    .search_result_header {
       height: 55px;
       font-size: 23px;
     }
