@@ -6,3 +6,9 @@
   // position: relative;
   overflow-x: hidden;
 }
+
+@media all and (min-width: 769px) {
+  .home {
+    display: none;
+  }
+}

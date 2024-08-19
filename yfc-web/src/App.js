@@ -1,15 +1,15 @@
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import Header from "./components/header/header";
-import Footer from "./components/footer/footer";
-import HomePage from "./pages/home/home";
-import RecruitPage from "./pages/recruit/recruit.js";
-import SearchResultPage from "./pages/recruit/searchresult/searchresult.js";
-import RecruitResultPage from "./pages/recruit/resultpage/result.js";
-import LoginPage from "./pages/login/login";
-import SignUpPage from "./pages/signup/signup";
-import InnerHomePage from "./pages/innerpages/innerhome/innerhome.js";
-import AttendPage from "./pages/attend/attend.js";
+import "App.css";
+import Header from "components/header/header";
+import Footer from "components/footer/footer";
+import HomePage from "pages/home/home";
+import RecruitPage from "pages/recruit/recruit.js";
+import SearchResultPage from "pages/recruit/searchresult/searchresult.js";
+import RecruitResultPage from "pages/recruit/resultpage/result.js";
+import LoginPage from "pages/login/login";
+import SignUpPage from "pages/signup/signup";
+import InnerHomePage from "pages/innerpages/innerhome/innerhome.js";
+import AttendPage from "pages/attend/attend.js";
 
 function App() {
   return (

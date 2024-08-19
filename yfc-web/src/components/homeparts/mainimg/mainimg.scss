@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
 
 .mainimg {
   width: 100vw;
@@ -9,65 +9,63 @@
   flex-direction: column;
   position: relative;
 
-  .mainimg_wide {
-    display: flex;
-    justify-content: center;
+  // .mainimg_wide {
+  //   display: flex;
+  //   justify-content: center;
 
-    img {
-      width: 100vw;
-      height: 46.8vw;
-      // height: 53.7vw;
-    }
+  //   img {
+  //     width: 100vw;
+  //     height: 46.8vw;
+  //     // height: 53.7vw;
+  //   }
 
-    .black {
-      width: 100vw;
-      height: 46.8vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 0;
-      background-color: rgba(0, 0, 0, 0.36);
+  //   .black {
+  //     width: 100vw;
+  //     height: 46.8vw;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     position: absolute;
+  //     top: 0;
+  //     background-color: rgba(0, 0, 0, 0.36);
 
-      .txtbox {
-        width: 707px;
-        height: 100%;
-        padding-bottom: 20px;
-        // padding-top: 580px;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        text-align: center;
-        z-index: 30;
-        font-weight: 300;
-        white-space: nowrap;
+  //     .txtbox {
+  //       width: 707px;
+  //       height: 100%;
+  //       padding-bottom: 20px;
+  //       // padding-top: 580px;
+  //       display: flex;
+  //       flex-direction: column;
+  //       justify-content: end;
+  //       text-align: center;
+  //       z-index: 30;
+  //       font-weight: 300;
+  //       white-space: nowrap;
 
-        p {
-          color: white;
-          font-size: 75px;
-          // margin-bottom: 10px;
-          text-shadow: 0 0 5px black;
-          font-family: "Josefin Slab", serif;
-        }
-      }
-    }
+  //       p {
+  //         color: white;
+  //         font-size: 75px;
+  //         // margin-bottom: 10px;
+  //         text-shadow: 0 0 5px black;
+  //         font-family: "Josefin Slab", serif;
+  //       }
+  //     }
+  //   }
 
-    .gradient {
-      position: absolute;
-      bottom: -5.8vw;
-      width: 100vw;
-      height: 15vw;
-      background: linear-gradient(
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 1) 40%,
-        rgba(0, 0, 0, 1) 100%
-      );
-    }
-  }
+  //   .gradient {
+  //     position: absolute;
+  //     bottom: -5.8vw;
+  //     width: 100vw;
+  //     height: 15vw;
+  //     background: linear-gradient(
+  //       rgba(0, 0, 0, 0) 0%,
+  //       rgba(0, 0, 0, 1) 40%,
+  //       rgba(0, 0, 0, 1) 100%
+  //     );
+  //   }
+  // }
 
   .mainimg_small {
-    display: none;
-
     img {
       width: 100vw;
     }
